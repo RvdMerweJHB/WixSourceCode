@@ -1,0 +1,39 @@
+﻿Installing assembly 'C:\Users\Rudolph.vanderMerwe\Desktop\Credit Service\bin\Release\Cube Credit Service.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\Users\Rudolph.vanderMerwe\Desktop\Credit Service\bin\Release\Cube Credit Service.InstallLog
+   assemblypath = C:\Users\Rudolph.vanderMerwe\Desktop\Credit Service\bin\Release\Cube Credit Service.exe
+Installing service CCS...
+Service CCS has been successfully installed.
+Creating EventLog source CCS in log Application...
+Committing assembly 'C:\Users\Rudolph.vanderMerwe\Desktop\Credit Service\bin\Release\Cube Credit Service.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\Users\Rudolph.vanderMerwe\Desktop\Credit Service\bin\Release\Cube Credit Service.InstallLog
+   assemblypath = C:\Users\Rudolph.vanderMerwe\Desktop\Credit Service\bin\Release\Cube Credit Service.exe
+Installing assembly 'C:\CubeServices\CubeCredit Service\Cube Credit Service.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\CubeServices\CubeCredit Service\Cube Credit Service.InstallLog
+   assemblypath = C:\CubeServices\CubeCredit Service\Cube Credit Service.exe
+Installing service CCS...
+Service CCS has been successfully installed.
+Creating EventLog source CCS in log Application...
+Committing assembly 'C:\CubeServices\CubeCredit Service\Cube Credit Service.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\CubeServices\CubeCredit Service\Cube Credit Service.InstallLog
+   assemblypath = C:\CubeServices\CubeCredit Service\Cube Credit Service.exe
+Installing assembly 'C:\Vox Products\Windows Services\CUBE\CubeCredit Service\Cube Credit Service.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\Vox Products\Windows Services\CUBE\CubeCredit Service\Cube Credit Service.InstallLog
+   assemblypath = C:\Vox Products\Windows Services\CUBE\CubeCredit Service\Cube Credit Service.exe
+Installing service CCS...
+Service CCS has been successfully installed.
+Creating EventLog source CCS in log Application...
+Committing assembly 'C:\Vox Products\Windows Services\CUBE\CubeCredit Service\Cube Credit Service.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\Vox Products\Windows Services\CUBE\CubeCredit Service\Cube Credit Service.InstallLog
+   assemblypath = C:\Vox Products\Windows Services\CUBE\CubeCredit Service\Cube Credit Service.exe

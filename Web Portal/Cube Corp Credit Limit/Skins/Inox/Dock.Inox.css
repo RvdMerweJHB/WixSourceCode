@@ -1,0 +1,179 @@
+/* Docking Zone properties */
+
+.RadDockZone_Inox
+{
+    border:1px solid #868b8f;
+    background:url(<%=WebResource("Telerik.Web.UI.Skins.Inox.Dock.DockZone.gif);
+    padding:5px 0 0 5px;
+}
+
+*>.RadDockZone_Inox.rdVertical /* hidden from IE6 */
+{
+    padding-right:5px;
+}
+
+/* Dock Object properties */
+
+/* wrappers and borders */
+
+.RadDockZone_Inox .rdPlaceHolder
+{
+    border-color:#666;
+}
+
+.RadDock_Inox
+{
+    margin:0 5px 5px 0;
+    background:#c6ccda;
+    color:#000;
+    text-align:left;
+}
+
+.RadDock_Inox .rdTopBorder,
+.RadDock_Inox .rdSideBorders,
+.RadDock_Inox .rdBottomBorder
+{
+    border-width:1px;
+    border-color:#868b8f;
+}
+.RadDock_Inox .rdSideBorders
+{
+    border-style:none solid none;
+}
+.RadDock_Inox .rdTopBorder
+{
+    border-style:solid none none;
+}
+.RadDock_Inox .rdBottomBorder
+{
+    border-style:none none solid;
+}
+
+/* titlebar and buttons */
+
+.RadDock_Inox .rdTitlebar
+{
+    top:1px; /*brd*/
+    border-style:solid;
+    border-color:#868b8f;
+    color:#fff;
+}
+
+.RadDock_Inox .rdHTitlebar .rdTitlebar
+{
+    height:18px;
+    background:url(Dock/TitlebarH.gif) repeat-x;
+    border-width:0 0 1px;
+}
+.RadDock_Inox.rdCollapsed .rdHTitlebar .rdTitlebar
+{
+    padding-bottom:0px; /*brd - title brd*/
+}
+.RadDock_Inox .rdVTitlebar .rdTitlebar
+{
+    left:1px;
+    width:18px;
+    background:url(Dock/TitlebarV.gif) repeat-x;
+    border-width:0 1px 0 0;
+}
+
+.RadDock_Inox .rdTitle
+{
+    font:bold 11px/18px arial,sans-serif;
+}
+
+.RadDock_Inox .rdHTitlebar .rdTitle
+{
+    padding-left:8px;
+    background:url(Dock/TitlebarHLeft.gif) no-repeat;
+}
+.RadDock_Inox .rdVTitlebar .rdTitle
+{
+    padding:8px 0 0 4px;
+    background:url(Dock/TitlebarVTop.gif) no-repeat;
+    line-height:1.4em;
+}
+
+.RadDock_Inox .rdHTitlebar .rdCommands a
+{
+    margin:0 2px 0 0;
+}
+.RadDock_Inox .rdVTitlebar .rdCommands a
+{
+    margin:0;
+}
+
+.RadDock_Inox .rdTitlebar .rdCommands a
+{
+    height:17px;
+}
+.RadDock_Inox .rdCollapse
+{
+    width:13px;
+    background:url(Dock/Collapse.gif) repeat-x;
+}
+.RadDock_Inox .rdExpand
+{
+    width:13px;
+    background:url(Dock/Expand.gif) repeat-x;
+}
+.RadDock_Inox .rdClose
+{
+    width:13px;
+    background:url(Dock/Close.gif) repeat-x;
+}
+.RadDock_Inox .rdPin
+{
+    width:13px;
+    background:url(Dock/Pin.gif) repeat-x;
+}
+.RadDock_Inox .rdUnpin
+{
+    width:13px;
+    background:url(Dock/Unpin.gif) repeat-x;
+}
+
+.RadDock_Inox .rdCustom
+{
+    width:13px;
+    background:url(Dock/Custom.gif) no-repeat;
+}
+
+/* inner content */
+
+.RadDock_Inox .rdContent
+{
+    top:1px; /*brd*/
+    padding-bottom:1px; /*brd*/
+    font:12px/1.2 arial,sans-serif;
+}
+
+.RadDock_Inox .rdVTitlebar .rdContent
+{
+    margin-left:18px;
+}
+
+
+/* drag grips */
+
+.RadDock_Inox .rdGripTop,
+.RadDock_Inox .rdGripLeft
+{
+    background:#666;
+}
+
+.RadDock_Inox .rdGripTop
+{
+    top:1px; /*brd*/
+    height:3px;
+}
+.RadDock_Inox .rdGripLeft
+{
+    left:1px; /*brd*/
+    width:3px;
+}
+
+.RadDock_Inox .rdWGripLeft .rdContent
+{
+    margin-left:3px;
+}

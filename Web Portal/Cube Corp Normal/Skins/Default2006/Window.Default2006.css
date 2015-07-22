@@ -1,0 +1,362 @@
+/* RadWindow 2.0 Default2006 Skin */
+div.radwindow_Default2006.maximizedwindow table td
+{
+	vertical-align: top;
+}
+
+div.radwindow_Default2006 table td.corner
+{
+	width: 10px;
+}
+
+div.radwindow_Default2006 table td.topleft
+{
+    width: 1px; height: 4px;
+	background: url('Window/WindowSprites.gif') no-repeat 0 0;
+}
+
+div.radwindow_Default2006 table td.topright
+{
+    width: 1px; height: 4px;
+    background: url('Window/WindowSprites.gif') no-repeat 0 -40px;
+}
+
+div.radwindow_Default2006 table td.titlebar
+{
+    background: transparent url('Window/WindowSprites.gif')  repeat-x 0 -80px;
+}
+
+div.radwindow_Default2006 .windowcontent
+{
+	height: 100%;
+    border: 1px solid #ccc;
+    border-top-width: 0;
+	background: white;
+}
+
+div.radwindow_Default2006 table td.bodyleft
+{
+    width: 10px;
+	background: transparent url('Window/WindowVerticalSprites.gif') repeat-y;
+}
+
+div.radwindow_Default2006 table td.bodyright
+{
+    width: 10px;
+	background: transparent url('Window/WindowVerticalSprites.gif') repeat-y -10px 0;
+}
+
+div.radwindow_Default2006 table td.footerleft
+{
+	width: 1px; height: 10px;
+	background: transparent url('Window/WindowVerticalSprites.gif') no-repeat -20px 0;
+}
+
+div.radwindow_Default2006 table td.footerright
+{
+	width: 1px; height: 10px;
+	background: transparent url('Window/WindowVerticalSprites.gif') no-repeat -30px 0;
+}
+
+div.radwindow_Default2006 table td.footercenter
+{
+	background: transparent url('Window/WindowSprites.gif') repeat-x 0 -150px;
+	height: 10px;
+}
+
+div.radwindow_Default2006 td.statusbar
+{
+	height: 23px; line-height: 23px;
+	background: #292929 url('Window/WindowSprites.gif') repeat-x 0 -120px;
+}
+
+div.radwindow_Default2006 td.statusbar input
+{
+    background-repeat: no-repeat;
+    background: transparent;
+    color: #595959;
+    padding-top: 6px;
+    height: 17px;
+    font: normal 11px "Myriad Pro", Arial, Verdana;
+}
+
+div.radwindow_Default2006 td.statusbar div
+{
+      background: url('Window/WindowVerticalSprites.gif') no-repeat -40px 4px;
+}
+
+div.radwindow_Default2006 td.statusbar .loading
+{	
+	background-image: url('Window/Loading.gif');	
+}
+
+div.radwindow_Default2006 td.statusbar span.statustext
+{
+	font: normal 11px Verdana, Arial, Sans-serif;
+	color: black;
+}
+
+div.radwindow_Default2006 tr.statusbarrow .corner.bodyleft
+{
+    width: 10px;
+    background: transparent url('Window/WindowVerticalSprites.gif') repeat-y 0 0;
+}
+
+div.radwindow_Default2006 tr.statusbarrow .corner.bodyright
+{
+    width: 10px;
+    background: transparent url('Window/WindowVerticalSprites.gif') repeat-y -10px 0 !important;
+}
+
+div.radwindow_Default2006 tr.statusbarrow .statusbar
+{
+    /**/
+}
+/* --- TITLEBAR SETTINGS --- */
+
+div.radwindow_Default2006 table.titlebarcontrols ul.controlbuttons li a
+{
+	width: 28px; height: 16px; line-height: 16px; font-size: 1px;
+	cursor: default;
+	margin: 2px 1px 0 1px;
+	background-image: url('Window/CommandSprites.gif');
+	background-repeat: no-repeat;
+}
+
+/* reload button */
+div.radwindow_Default2006 table.titlebarcontrols ul.controlbuttons li a.reloadbutton
+{
+	background-position: -84px 0;
+}
+
+div.radwindow_Default2006 table.titlebarcontrols ul.controlbuttons li a.reloadbutton:hover
+{
+	background-position: -84px -26px;
+}
+/* end of reload button */
+
+/* pin button */
+div.radwindow_Default2006 table.titlebarcontrols ul.controlbuttons li a.pinbutton
+{
+	background-position: -140px 0;
+}
+
+div.radwindow_Default2006 table.titlebarcontrols ul.controlbuttons li a.pinbutton:hover
+{
+	background-position: -140px -26px;
+}
+/* end of pin button */
+
+/* pin.on button */
+div.radwindow_Default2006 table.titlebarcontrols ul.controlbuttons li a.pinbutton.on
+{
+	background-position: -112px 0;
+}
+
+div.radwindow_Default2006 table.titlebarcontrols ul.controlbuttons li a.pinbutton.on:hover
+{
+	background-position: -112px -26px;
+}
+/* end of pin.on button */
+
+/* minimize button */
+div.radwindow_Default2006 table.titlebarcontrols ul.controlbuttons li a.minimizebutton
+{
+	background-position: -56px 0;
+}
+
+div.radwindow_Default2006 table.titlebarcontrols ul.controlbuttons li a.minimizebutton:hover
+{
+	background-position: -56px -26px;
+}
+/* end of minimize button */
+
+/* maximize button */
+div.radwindow_Default2006 table.titlebarcontrols ul.controlbuttons li a.maximizebutton
+{
+	background-position: -28px 0;
+}
+
+div.radwindow_Default2006 table.titlebarcontrols ul.controlbuttons li a.maximizebutton:hover
+{
+    background-position: -28px -26px;
+}
+/* end of maximize button */
+
+/* close button */
+div.radwindow_Default2006 table.titlebarcontrols ul.controlbuttons li a.closebutton
+{
+	background-position: -168px 0;
+}
+
+div.radwindow_Default2006 table.titlebarcontrols ul.controlbuttons li a.closebutton:hover
+{
+	background-position: -168px -26px;
+}
+/* end of close button */
+
+div.radwindow_Default2006 table.titlebarcontrols a.windowicon
+{
+	background: transparent url('Window/Icon.gif') no-repeat left top;
+	width: 16px; height: 16px;
+	cursor: default;
+	margin: 2px 0 0 2px;
+}
+
+div.radwindow_Default2006 table.titlebarcontrols em
+{
+	font: bold 11px Arial, Verdana, sans-serif !important;
+	color: #212121;	
+	margin: 2px;
+}
+/* --- END OF TITLEBAR SETTINGS --- */
+
+/* --- MINIMIZED WINDOW SETTINGS --- */
+div.radwindow_Default2006.minimizedwindow
+{
+	width: 160px !important; height: 30px !important;
+	background: #4b4b4b;
+	border: solid 2px #232323;
+}
+
+div.radwindow_Default2006.minimizedwindow td
+{
+    background: none !important;
+}
+
+div.radwindow.radwindow_Default2006.minimizedwindow table.titlebarcontrols 
+{
+	width: 150px !important; height: 40px !important;
+	margin-top: -3px;
+}
+
+div.radwindow.radwindow_Default2006.minimizedwindow table.titlebarcontrols ul
+{
+    position: relative; top: -1px;
+}
+
+div.radwindow_Default2006.minimizedwindow em
+{
+	color: white !important;
+	width: 75px !important;
+}
+
+div.radwindow_Default2006.minimizedwindow td.corner
+{
+	cursor: default;
+}
+
+/* normal states of the minimized window parts */
+div.radwindow_Default2006.minimizedwindow td.corner.topleft
+{
+	width: 10px !important;
+}
+
+div.radwindow_Default2006.minimizedwindow td.corner.topright
+{
+	width: 10px !important;
+}
+
+div.radwindow_Default2006.minimizedwindow td.titlebar
+{
+	cursor: default;
+	background: #4b4b4b;
+}
+/* end normal states of the minimized window parts */
+/* ---	END OF MINIMIZED WINDOW SETTINGS --- */
+
+div.radwindow_Default2006 .windowcontent .windowpopup
+{
+	margin: 16px;
+	font: normal 11px Arial;
+	color: black;	
+	padding: 0px 0px 16px 50px;
+}
+
+/* --- RadAlert --- */
+div.radwindow_Default2006 .windowcontent .windowpopup.radalert
+{
+	background: transparent url('Window/ModalDialogAlert.gif') no-repeat 8px center;
+}
+
+/* --- RadPrompt --- */
+div.radwindow_Default2006 .windowcontent .windowpopup.radprompt
+{
+	padding: 0;
+}
+
+/* --- RadConfirm --- */
+div.radwindow_Default2006 .windowcontent .windowpopup.radconfirm
+{
+	background: transparent url('Window/ModalDialogConfirm.gif') no-repeat 8px center;	
+}
+
+div.radwindow_Default2006 .windowcontent  input.dialoginput
+{
+	padding: 3px 4px 0 4px;
+	height: 17px; width: 100%;
+	font: normal 11px Verdana, Arial, Sans-serif;
+}
+
+div.radwindow_Default2006 .windowcontent   a,
+div.radwindow_Default2006 .windowcontent   a span
+{
+	text-decoration: none;
+	color: black;
+	line-height: 22px;
+	cursor: default;
+}
+
+div.radwindow_Default2006 .windowcontent a.radwindowbutton
+{
+	background: transparent url('Window/ModalDialogButtonSprites.gif') no-repeat 0 0; 
+	padding: 0 0 0 3px;
+	margin: 8px 8px 8px 0;
+}
+
+div.radwindow_Default2006 .windowcontent a.radwindowbutton span.outerspan
+{
+	background: transparent url('Window/ModalDialogButtonSprites.gif') no-repeat right 0;
+	padding: 0 3px 0 0;
+}
+
+div.radwindow_Default2006 .windowcontent a.radwindowbutton span.innerspan
+{
+	background: white url('Window/ModalDialogButtonSprites.gif') repeat-x 0 -22px;
+	padding: 0 12px;
+}
+
+div.radwindow_Default2006 .windowcontent a.radwindowbutton:hover
+{
+	background: transparent url('Window/ModalDialogButtonSprites.gif') no-repeat 0 -64px; 
+	padding: 0 0 0 3px;
+	margin: 8px 8px 8px 0;
+}
+
+div.radwindow_Default2006 .windowcontent a.radwindowbutton:hover span.outerspan
+{
+	background: transparent url('Window/ModalDialogButtonSprites.gif') no-repeat right -64px;
+	padding: 0 3px 0 0;
+}
+
+div.radwindow_Default2006 .windowcontent a.radwindowbutton:hover span.innerspan
+{
+	background: white url('Window/ModalDialogButtonSprites.gif') repeat-x 0 -86px;
+	padding: 0 12px;
+}
+/* modal dialog window background */
+div.modaldialogbacgkround
+{
+	background: black;
+}
+/* --- END OF MODAL DIALOGS --- */
+
+/* --- SET VISTA AERO TRANSPARENCY --- */
+div.radwindow.radwindow_Default2006.normalwindow.transparentwindow td.corner,
+div.radwindow.radwindow_Default2006.normalwindow.transparentwindow td.titlebar,
+div.radwindow.radwindow_Default2006.transparentwindow td.footercenter
+{
+	filter: progid:DXImageTransform.Microsoft.Alpha(opacity=80);
+	opacity: .8; -moz-opacity: .8;
+}
+/* --- SET VISTA AERO TRANSPARENCY --- */

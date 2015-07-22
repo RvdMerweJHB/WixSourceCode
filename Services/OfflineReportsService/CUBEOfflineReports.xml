@@ -1,0 +1,136 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+CUBEOfflineReports
+</name>
+</assembly>
+<members>
+<member name="P:CUBEOfflineReports.My.Resources.Resources.ResourceManager">
+	<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member><member name="P:CUBEOfflineReports.My.Resources.Resources.Culture">
+	<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member><member name="T:CUBEOfflineReports.My.Resources.Resources">
+	<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member><member name="T:CUBEOfflineReports.dsReports.UsageDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:CUBEOfflineReports.dsReports.InboundDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:CUBEOfflineReports.dsReports.OutboundDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:CUBEOfflineReports.dsReports.UsersDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:CUBEOfflineReports.dsReports.ErrorLogDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:CUBEOfflineReports.dsReports.BillingDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:CUBEOfflineReports.dsReports.ItemizedBillDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:CUBEOfflineReports.dsReports.GetSalesPersonCommissionDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:CUBEOfflineReports.dsReports.CommissionDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:CUBEOfflineReports.dsReports.UsageRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:CUBEOfflineReports.dsReports.InboundRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:CUBEOfflineReports.dsReports.OutboundRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:CUBEOfflineReports.dsReports.UsersRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:CUBEOfflineReports.dsReports.ErrorLogRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:CUBEOfflineReports.dsReports.BillingRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:CUBEOfflineReports.dsReports.ItemizedBillRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:CUBEOfflineReports.dsReports.GetSalesPersonCommissionRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:CUBEOfflineReports.dsReports.CommissionRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:CUBEOfflineReports.dsReports.UsageRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:CUBEOfflineReports.dsReports.InboundRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:CUBEOfflineReports.dsReports.OutboundRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:CUBEOfflineReports.dsReports.UsersRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:CUBEOfflineReports.dsReports.ErrorLogRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:CUBEOfflineReports.dsReports.BillingRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:CUBEOfflineReports.dsReports.ItemizedBillRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:CUBEOfflineReports.dsReports.GetSalesPersonCommissionRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:CUBEOfflineReports.dsReports.CommissionRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:CUBEOfflineReports.dsReports">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+</members>
+</doc>

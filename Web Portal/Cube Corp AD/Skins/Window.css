@@ -1,0 +1,176 @@
+/* RadWindow 2 Common Css */
+
+div.radwindow
+{
+	float: left; position: absolute;
+}
+
+div.radwindow a
+{
+    outline: none;
+}
+
+div.radwindow table
+{
+    width: 100%;
+    height: 100%;
+}
+
+div.radwindow div.min
+{
+	display: none;
+}
+
+div.radwindow table td
+{
+	padding: 0; margin: 0;
+	border-collapse: collapse;
+	vertical-align: top;
+	font-size: 1px;
+}
+
+.radwindow .corner,
+.radwindow .footercenter
+{
+    line-height:1;
+}
+
+div.radwindow table td.titlebar
+{
+	-moz-user-select: none;
+	/*cursor: move;*/
+}
+
+div.radwindow td.titlebar div.topresize
+{
+	font-size: 1px;
+	height: 4px !important;
+	line-height: 4px !important;
+	width: 100%;
+}
+
+div.radwindow td.statusbar input
+{
+	border: 0px;		
+	background: trasparent; background-repeat: no-repeat;		
+	width: 100%;	
+	cursor: default;
+	-moz-user-select: none;
+	overflow: hidden; text-overflow: ellipsis;
+	display: block; float: left;
+}
+
+div.radwindow td.statusbar div
+{		
+	width: 18px; height: 18px;	
+}
+
+div.radwindow td.statusbar .loading
+{
+	padding-left:30px;
+}
+
+div.radwindow td.statusbar span.statustext
+{
+	cursor: default; -moz-user-select: none;
+}
+
+div.radwindow.nostatusbar tr.statusbarrow
+{
+	display: none;
+}
+
+div.radwindow table.titlebarcontrols ul.controlbuttons
+{
+	padding: 0; margin: 0;
+	list-style: none; white-space:nowrap;	
+	float: right; 
+}
+
+div.radwindow table.titlebarcontrols ul.controlbuttons li
+{
+	float: left;
+}
+
+div.radwindow table.titlebarcontrols ul.controlbuttons li a
+{
+	display: block; text-decoration: none;
+}
+
+div.radwindow table.titlebarcontrol ul.controlbuttons li a span
+{
+	text-indent: -9999px; display: block;	
+}
+
+div.radwindow table.titlebarcontrols a.windowicon
+{
+	display: block; margin-right: 3px;	
+}
+
+div.radwindow table.titlebarcontrols em
+{	
+	overflow: hidden; text-overflow: ellipsis; white-space: nowrap; float: left;	
+}
+
+/*div.radwindow.minimizedwindow em
+{
+	overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
+}*/
+
+div.radwindow.minimizedwindow
+{
+	overflow: hidden;
+}
+
+div.radwindow div.iconmenu
+{
+	float: left; position: absolute; z-index: 56000000;
+}
+
+div.radwindow div.iconmenu a
+{
+	cursor: default;
+}
+
+/* inactive window settings */
+div.radwindow.inactivewindow,
+div.radwindow.inactivewindow
+{
+	filter: progid:DXImageTransform.Microsoft.Alpha(opacity=60) !important;
+	opacity: .6 !important; -moz-opacity: .6 !important;
+}
+
+div.radwindow.maximizedwindow
+{
+	width: 100% !important; height: 100% !important;	
+}
+
+div.radwindow.inactivewindow table.titlebarcontrols
+{
+	position: static;
+}
+/* end of inactive window settings */
+
+/* popup windows */
+.radwindow .windowpopup a.radwindowbutton,
+.radwindow .windowpopup a.radwindowbutton span
+{
+	display: block; float: left;
+}
+
+div.radwindow table.titlebarcontrols ul.controlbuttons li a
+{
+    text-indent: -9999px;
+}
+
+/* opera fix */
+html:first-child div.radwindow ul
+{
+    float: right; 
+    border: solid 1px transparent;
+}
+
+.radwindow .dialogtext
+{
+    text-align: left;
+}

@@ -1,0 +1,196 @@
+/*
+
+radtreeview base css
+
+* Notes on some CSS class names *
+
+class  --  HTML element  --  description 
+
+rtUL  --  <ul>  --  multiple nodes container
+rtLI  --  <li>  --  one node 
+rtFirst  --  <li>  -- TreeView's first node
+rtLast  --  <li>  -- last node in a given node group (<ul>)
+rtTop,rtMid,rtBot  --  <div>  -- a wrapper (<div>) inside a node (<li>) - can be in a top, middle or bottom node in a given node group
+rtIn  --  <span> or <div>  -- the inner container inside a node - contains text (<span> rendering) or template (<div> rendering)
+rtSp  --  <span>  -- holds a dummy element for adjustment of node heights
+rtChk  --  <input>  -- holds a node's checkbox
+rtImg  --  <img>  -- holds a node's icon
+rtPlus,rtMinus -- <span> -- holds a node's expand / collapse buttons (plus / minus signs)
+
+*/
+
+.radtreeview
+{
+	white-space:nowrap;
+	cursor: default;
+}
+
+.radtreeview .rtUL
+{
+	list-style:none;
+	margin:0;
+	padding:0;
+}
+
+/* link with NavigateUrl*/
+
+.radtreeview a.rtIn
+{
+	text-decoration: none;
+	cursor: pointer;
+}
+
+/* template container */
+.radtreeview div.rtIn
+{
+	display:-moz-inline-block;
+	display:inline-block;
+	vertical-align:top;
+}
+
+/* "massage" the template container to obtain inline-block display */
+
+* html .radtreeview div.rtIn
+{
+	display:inline-block;
+}
+
+* html .radtreeview div.rtIn
+{
+	display:inline;
+}
+
+*+html .radtreeview div.rtIn
+{
+	display:inline-block;
+}
+
+*+html .radtreeview div.rtIn
+{
+	display:inline;
+}
+
+/* end of "massage" */
+
+.radtreeview .rtSp
+{
+	display: -moz-inline-box;
+	display: inline-block;
+	width: 1px;
+	vertical-align: middle;
+}
+
+.radtreeview .rtUL .rtUL
+{
+	padding-left:20px;
+}
+
+.radtreeview .rtPlus,
+.radtreeview .rtMinus
+{
+	font-size:0;
+	padding:0;
+	display: -moz-inline-box;
+	display:inline-block;
+	vertical-align:top;
+	cursor: pointer;
+}
+
+.radtreeview .rtTop,
+.radtreeview .rtMid,
+.radtreeview .rtBot,
+.radtreeview .rtUL
+{
+	zoom:1;
+}
+
+.radtreeview .rtImg,
+.radtreeview .rtIn,
+.radtreeview .rtChk
+{
+	vertical-align:middle;
+}
+
+.radtreeview .rtLoadingBefore,
+.radtreeview .rtLoadingAfter
+{
+	display: -moz-inline-box;
+	display: inline-block;
+}
+
+.radtreeview .rtLoadingBelow
+{
+	display:block;
+}
+
+.radtreeview .rtEdit .rtIn
+{
+	cursor: text;
+}
+
+.radtreeview .rtEdit .rtIn input
+{
+	outline: 0; /* disable safari glow effect - RadTreeView look consistency */
+	cursor: text;
+}
+
+/* enables positioning of plus / minus images under firefox in rtl mode */
+
+
+.radtreeview_rtl .rtPlus, 
+.radtreeview_rtl .rtMinus
+{
+	position:relative;
+}
+
+/* reverts the above rule to fix the position:relative + overflow:auto bug under IE6&7 */
+* html .radtreeview_rtl .rtPlus, 
+* html .radtreeview_rtl .rtMinus
+{
+	position:static;
+}
+
+*+html .radtreeview_rtl .rtPlus, 
+*+html .radtreeview_rtl .rtMinus
+{
+	position:static;
+}
+
+/*
+turn on hasLayout of LI elements & inner treeitem containers in rtl mode
+necessary to enable proper display of inner treeitem containers
+*/
+.radtreeview_rtl .rtLI,
+.radtreeview_rtl .rtIn
+{
+	zoom:1;
+}
+
+.radtreeview_rtl .rtUL .rtUL
+{
+	padding-right:20px;
+	padding-left: 0;
+}
+
+/* hacks for Opera */
+@media screen and (min-width:550px)
+{
+	/* opera inverts the padding automatically in rtl mode, so restore the initial order */
+	html:first-child .radtreeview_rtl .rtUL .rtUL
+	{
+		padding-left:20px;
+		padding-right: 0;
+	}
+	
+	/* fix for opera's unclickable plus/minus signs */
+	html:first-child .radtreeview .rtPlus:hover, 
+	html:first-child .radtreeview .rtMinus:hover
+	{
+		position: relative;
+	}
+	
+	html:first-child .radtreeview .rtSp
+	{
+		display: none;
+	}
+}

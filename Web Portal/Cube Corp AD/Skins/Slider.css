@@ -1,0 +1,83 @@
+/* -------------------------------------------------------- GLOBAL SLIDER CLASSES -------------------------------------------------------- */
+
+/* slider wrapper class */
+.radslider
+{
+	position: relative; 
+	-moz-user-select: none;
+	font-size:1px;
+	line-height:1px;	
+}
+
+/* any link inside r.a.d.slider */
+.radslider a
+{
+	display: block; 
+	text-indent: -9999px;
+	text-decoration:none;
+}
+
+.radslider a:focus,
+.radslider a:active
+{
+	outline: none;
+}
+
+.radslider .handle span,
+.radslider .draghandle span
+{
+	display: block; 
+}
+
+/* drag handle, track class, selected region  */
+.radslider .draghandle,
+.radslider .track,
+.radslider .selectedregion
+{
+	position: absolute; 
+}
+
+.radslider .selectedregion
+{
+	top:0;
+	left:0;
+}
+
+.radslider.disabled
+{
+	filter: progid:DXImageTransform.Microsoft.Alpha(opacity = 50);
+	-moz-opacity: .5;
+	opacity: .5;
+	cursor: no-drop;
+}
+/* -------------------------------------------------------- GLOBAL SLIDER CLASSES END ----------------------------------------------------- */
+
+/* -------------------------------------------------------- HORIZONTAL SLIDER CLASSES -------------------------------------------------------- */
+
+/* decrease handle class (i.e. left) */
+.radslider.horizontal .decrease
+{
+	float: left; 
+}
+
+/* increase handle class (i.e. right) */
+.radslider.horizontal .increase
+{
+	float: right; 
+}
+/* -------------------------------------------------------- HORIZONTAL SLIDER CLASSES END ---------------------------------------------------- */
+
+/* -------------------------------------------------------- VERTICAL SLIDER CLASSES -------------------------------------------------------- */
+
+/* increase handle class (i.e. down) */
+.radslider.vertical .decrease
+{
+	position: absolute;
+	top: 0;
+}
+/* increase handle class (i.e. down) */
+.radslider.vertical .increase
+{
+	position: absolute;
+	bottom: 0;
+}

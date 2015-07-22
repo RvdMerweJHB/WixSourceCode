@@ -1,0 +1,373 @@
+/* Telerik RadWindow Inox Skin */
+
+div.radwindow_Inox.maximizedwindow table td
+{
+	vertical-align: top;
+}
+
+div.radwindow_Inox table td.corner
+{
+	width: 9px;
+}
+
+div.radwindow_Inox table td.topleft
+{
+    width: 9px; height: 41px;
+	background: url('Window/WindowSprites.gif') no-repeat 0 0;
+}
+
+div.radwindow_Inox table td.topright
+{
+    width: 9px; height: 41px;
+    background: url('Window/WindowSprites.gif') no-repeat 100% 0;
+}
+
+div.radwindow_Inox table td.titlebar
+{
+    background: transparent url('Window/WindowTitlebar.gif')  repeat-x;
+	height: 37px; /* compensate the height of the resize div - 4px */
+}
+
+div.radwindow_Inox .windowcontent
+{
+	height: 100%;
+	border-bottom: 0;
+	background: #fff;
+}
+
+div.radwindow_Inox table td.bodyleft
+{
+    width: 9px;
+	background: transparent url('Window/WindowVerticalSprites.gif') repeat-y;
+}
+
+div.radwindow_Inox table td.bodyright
+{
+    width: 9px;
+	background: transparent url('Window/WindowVerticalSprites.gif') repeat-y 100% 0;
+}
+
+div.radwindow_Inox table td.footerleft
+{
+	width: 9px; height: 24px;
+	background: transparent url('Window/WindowSprites.gif') no-repeat 0 -66px;
+}
+
+div.radwindow_Inox table td.footerright
+{
+	width: 9px; height: 24px;
+	background: transparent url('Window/WindowSprites.gif') no-repeat 100% -66px;
+}
+
+div.radwindow_Inox table td.footercenter
+{
+	background: transparent url('Window/WindowSprites.gif') repeat-x 0 100%;
+	height: 24px;
+}
+
+div.radwindow_Inox td.statusbar
+{
+	height: 20px; line-height: 20px;
+	background: #f5f5f5;
+}
+
+div.radwindow_Inox td.statusbar table td
+{
+	border-top:1px solid #bababa;
+}
+
+div.radwindow_Inox td.statusbar input
+{
+    background-repeat: no-repeat;
+    background: transparent;
+    color: #999;
+    height: 18px;
+    font:11px arial,verdana,sans-serif;
+}
+
+div.radwindow_Inox td.statusbar div
+{
+	width:15px; height:15px;
+	margin-top:5px;
+    background: url('Window/WindowSprites.gif') no-repeat -16px -48px;
+}
+
+div.radwindow_Inox td.statusbar .loading
+{	
+	background: url('Window/Loading.gif') left center no-repeat;
+}
+
+div.radwindow_Inox td.statusbar span.statustext
+{
+	font:11px arial,verdana,sans-serif;
+	color: #666;
+}
+
+div.radwindow_Inox tr.statusbarrow .corner.bodyleft
+{
+    width: 9px;
+    background: transparent url('Window/WindowVerticalSprites.gif') repeat-y 0 0;
+}
+
+div.radwindow_Inox tr.statusbarrow .corner.bodyright
+{
+    width: 9px;
+    background: transparent url('Window/WindowVerticalSprites.gif') repeat-y 100% 0;
+}
+
+div.radwindow_Inox tr.statusbarrow .statusbar
+{
+    /**/
+}
+/* --- TITLEBAR SETTINGS --- */
+
+div.radwindow_Inox table.titlebarcontrols ul.controlbuttons li a
+{
+	width: 20px; height: 20px; line-height: 20px; font-size: 1px;
+	cursor: default;
+	margin: 5px 1px 0 1px;
+	background-image: url('Window/CommandSprites.gif');
+	background-repeat: no-repeat;
+}
+
+/* reload button */
+div.radwindow_Inox table.titlebarcontrols ul.controlbuttons li a.reloadbutton
+{
+	background-position: -150px 0;
+}
+
+div.radwindow_Inox table.titlebarcontrols ul.controlbuttons li a.reloadbutton:hover
+{
+	background-position: -150px -30px;
+}
+/* end of reload button */
+
+/* pin button */
+div.radwindow_Inox table.titlebarcontrols ul.controlbuttons li a.pinbutton
+{
+	background-position: -180px 0;
+}
+
+div.radwindow_Inox table.titlebarcontrols ul.controlbuttons li a.pinbutton:hover
+{
+	background-position: -180px -30px;
+}
+/* end of pin button */
+
+/* pin.on button */
+div.radwindow_Inox table.titlebarcontrols ul.controlbuttons li a.pinbutton.on
+{
+	background-position: -90px 0;
+}
+
+div.radwindow_Inox table.titlebarcontrols ul.controlbuttons li a.pinbutton.on:hover
+{
+	background-position: -90px -30px;
+}
+/* end of pin.on button */
+
+/* minimize button */
+div.radwindow_Inox table.titlebarcontrols ul.controlbuttons li a.minimizebutton
+{
+	background-position: -30px 0;
+}
+
+div.radwindow_Inox table.titlebarcontrols ul.controlbuttons li a.minimizebutton:hover
+{
+	background-position: -30px -30px;
+}
+/* end of minimize button */
+
+/* maximize button */
+div.radwindow_Inox table.titlebarcontrols ul.controlbuttons li a.maximizebutton
+{
+	background-position: -120px 0;
+}
+
+div.radwindow_Inox table.titlebarcontrols ul.controlbuttons li a.maximizebutton:hover
+{
+    background-position: -120px -30px;
+}
+/* end of maximize button */
+
+/* close button */
+div.radwindow_Inox table.titlebarcontrols ul.controlbuttons li a.closebutton
+{
+	background-position: 0 0;
+}
+
+div.radwindow_Inox table.titlebarcontrols ul.controlbuttons li a.closebutton:hover
+{
+	background-position: 0 -30px;
+}
+/* end of close button */
+
+div.radwindow_Inox table.titlebarcontrols a.windowicon
+{
+	background: transparent url('Window/Icon.gif') no-repeat left top;
+	width: 16px; height: 16px;
+	cursor: default;
+	margin: 6px 0 0 2px;
+}
+
+div.radwindow_Inox table.titlebarcontrols em
+{
+	font: bold 16px arial,verdana,sans-serif;
+	color: #444f59;
+	margin: 2px;
+	margin-top: 6px;
+}
+/* --- END OF TITLEBAR SETTINGS --- */
+
+/* --- MINIMIZED WINDOW SETTINGS --- */
+div.radwindow_Inox.minimizedwindow
+{
+	width: 130px !important; height: 30px !important;
+	background: #dddddd;
+	border: solid 1px #888;
+}
+
+div.radwindow_Inox.minimizedwindow .pinbutton,
+div.radwindow_Inox.minimizedwindow .reloadbutton,
+div.radwindow_Inox.minimizedwindow .minimizebutton,
+div.radwindow_Inox.minimizedwindow .maximizebutton
+{
+	display: none !important;
+}
+
+div.radwindow_Inox.minimizedwindow td
+{
+    background: none !important;
+}
+
+div.radwindow.radwindow_Inox.minimizedwindow table.titlebarcontrols 
+{
+	width: 150px !important; height: 40px !important;
+	margin-top: -3px;
+}
+
+div.radwindow.radwindow_Inox.minimizedwindow table.titlebarcontrols ul
+{
+    position: relative; top: -1px;
+}
+
+div.radwindow_Inox.minimizedwindow em
+{
+	color: #444F59;
+	width: 75px !important;
+}
+
+div.radwindow_Inox.minimizedwindow td.corner
+{
+	cursor: default;
+}
+
+/* normal states of the minimized window parts */
+div.radwindow_Inox.minimizedwindow td.corner.topleft
+{
+	width: 10px !important;
+}
+
+div.radwindow_Inox.minimizedwindow td.corner.topright
+{
+	width: 10px !important;
+}
+
+div.radwindow_Inox.minimizedwindow td.titlebar
+{
+	cursor: default !important;
+	background: #4b4b4b;
+}
+/* end normal states of the minimized window parts */
+/* ---	END OF MINIMIZED WINDOW SETTINGS --- */
+
+div.radwindow_Inox .windowcontent .windowpopup
+{
+	margin: 16px;
+	font: normal 11px Arial;
+	color: #444F59;	
+	padding: 0px 0px 16px 50px;
+}
+
+/* --- RadAlert --- */
+div.radwindow_Inox .windowcontent .windowpopup.radalert
+{
+	background: transparent url('Window/ModalDialogAlert.gif') no-repeat 8px center;
+}
+
+/* --- RadPrompt --- */
+div.radwindow_Inox .windowcontent .windowpopup.radprompt
+{
+	padding: 0;
+}
+
+/* --- RadConfirm --- */
+div.radwindow_Inox .windowcontent .windowpopup.radconfirm
+{
+	background: transparent url('Window/ModalDialogConfirm.gif') no-repeat 8px center;	
+}
+
+div.radwindow_Inox .windowcontent  input.dialoginput
+{
+	padding: 3px 4px 0 4px;
+	height: 17px; width: 100%;
+	font: normal 11px Verdana, Arial, Sans-serif;
+}
+
+div.radwindow_Inox .windowcontent a,
+div.radwindow_Inox .windowcontent a span
+{
+	text-decoration: none;
+	color: black;
+	line-height: 22px;
+	cursor: default;
+}
+
+div.radwindow_Inox .windowcontent a.radwindowbutton
+{
+	background: #dddddd;
+	border: solid 1px #888;
+	padding:3px;
+	margin: 8px 8px 0;
+}
+
+div.radwindow_Inox .windowcontent a.radwindowbutton span.outerspan
+{
+
+}
+
+div.radwindow_Inox .windowcontent a.radwindowbutton span.innerspan
+{
+
+}
+
+div.radwindow_Inox .windowcontent a.radwindowbutton:hover
+{
+
+}
+
+div.radwindow_Inox .windowcontent a.radwindowbutton:hover span.outerspan
+{
+
+}
+
+div.radwindow_Inox .windowcontent a.radwindowbutton:hover span.innerspan
+{
+
+}
+/* modal dialog window background */
+div.modaldialogbacgkround
+{
+	background: #ccc;
+}
+/* --- END OF MODAL DIALOGS --- */
+
+/* --- SET VISTA AERO TRANSPARENCY --- */
+div.radwindow.radwindow_Inox.normalwindow.transparentwindow td.corner,
+div.radwindow.radwindow_Inox.normalwindow.transparentwindow td.titlebar,
+div.radwindow.radwindow_Inox.transparentwindow td.footercenter
+{
+	filter: progid:DXImageTransform.Microsoft.Alpha(opacity=80);
+	opacity: .8; -moz-opacity: .8;
+}
+/* --- SET VISTA AERO TRANSPARENCY --- */

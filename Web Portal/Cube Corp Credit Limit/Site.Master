@@ -1,0 +1,215 @@
+﻿<%@ Master Language="VB" AutoEventWireup="false" CodeBehind="Site.master.vb" Inherits="CUBE.Site" %>
+
+<%@ Register Assembly="Telerik.Web.UI" Namespace="Telerik.Web.UI" TagPrefix="telerik" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head runat="server">
+    <title></title>
+    <link href="~/Styles/CUBE.css" rel="stylesheet" type="text/css" />
+  <script type="text/javascript">
+            function onLoad(sender, eventArgs) {
+                sender.get_items(); //This is enough to force Items initialization.
+            }
+
+            var _gaq = _gaq || [];
+            _gaq.push(['_setAccount', 'UA-19189378-1']);
+            _gaq.push(['_setDomainName', '.voxamvia.co.za']);
+            _gaq.push(['_trackPageview']);
+
+            (function () {
+                var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+                ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+                var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+            })();
+    </script> 
+    <asp:ContentPlaceHolder ID="HeadContent" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form runat="server">
+    <telerik:RadScriptManager ID="radmanDefault" runat="server">
+    </telerik:RadScriptManager>
+    <telerik:RadWindowManager ID="rwmDefault" runat="server">
+    </telerik:RadWindowManager>
+    <telerik:RadAjaxManager ID="radajaxDefault" runat="server" 
+        DefaultLoadingPanelID="rlpDefault" EnableHistory="True" >
+    </telerik:RadAjaxManager>
+    <telerik:RadAjaxLoadingPanel ID="rlpDefault" runat="server" Skin="Default">
+    </telerik:RadAjaxLoadingPanel>
+
+    <div class="pageheader">
+        <asp:Literal ID="lHeader" runat="server"></asp:Literal>
+    </div>
+    <div class="SearchBox" align="right" style="padding-right: 15px">
+        You are currently logged in as
+        <asp:LoginName ID="LoginName1" runat="server" Font-Bold="True" />
+        |
+        <asp:LoginStatus ID="LoginStatus1" runat="server" EnableViewState="False" 
+            LogoutAction="RedirectToLoginPage" Font-Bold="True"/>
+    </div>
+    <div id="menu">
+    
+        <telerik:RadMenu ID="RadMenu1" runat="server" Width="100%" 
+            style="margin-right: 7px; top: 0px; left: 0px;">
+            <DefaultGroupSettings ExpandDirection="Auto" Flow="Vertical" />
+            <CollapseAnimation Duration="200" Type="OutQuint" />
+            <Items>
+                <telerik:RadMenuItem runat="server" ExpandMode="ClientSide" 
+                    NavigateUrl="Dashboard.aspx" Text="Dashboard">
+                    <GroupSettings ExpandDirection="Auto" Flow="Vertical" />
+                </telerik:RadMenuItem>
+                <telerik:RadMenuItem runat="server" ExpandMode="ClientSide" 
+                    Text="My Faxes" PostBack="False">
+                    <Items>
+                        <telerik:RadMenuItem runat="server" ExpandMode="ClientSide" 
+                            NavigateUrl="Faxes.aspx?ViewType=Inbox" Text="Inbox">
+                            <GroupSettings ExpandDirection="Auto" Flow="Vertical" />
+                        </telerik:RadMenuItem>
+                        <telerik:RadMenuItem runat="server" ExpandMode="ClientSide" 
+                            NavigateUrl="Faxes.aspx?ViewType=SentItems" Text="Sent Items">
+                            <GroupSettings ExpandDirection="Auto" Flow="Vertical" />
+                        </telerik:RadMenuItem>
+                        <telerik:RadMenuItem runat="server" NavigateUrl="Bulkfax.aspx" 
+                            Text="Bulk Faxing">
+                        </telerik:RadMenuItem>
+                    </Items>
+                    <GroupSettings ExpandDirection="Auto" Flow="Vertical" />
+                </telerik:RadMenuItem>
+                <telerik:RadMenuItem runat="server" ExpandMode="ClientSide" 
+                    NavigateUrl="" Target="_self" Text="My Profile">
+                    <GroupSettings ExpandDirection="Auto" Flow="Vertical" />
+                </telerik:RadMenuItem>
+                <telerik:RadMenuItem runat="server" Text="My Company" PostBack="False">
+                    <Items>
+                        <telerik:RadMenuItem runat="server" Text="Company Settings">
+                        </telerik:RadMenuItem>
+                        <telerik:RadMenuItem runat="server" NavigateUrl="Templates.aspx" 
+                            Text="Template &amp; Email Settings">
+                        </telerik:RadMenuItem>
+                        <telerik:RadMenuItem runat="server" NavigateUrl="coverpages.aspx" 
+                            Text="Coverpages">
+                        </telerik:RadMenuItem>
+                    </Items>
+                </telerik:RadMenuItem>
+                <telerik:RadMenuItem runat="server" ExpandMode="ClientSide" 
+                    NavigateUrl="EmailedReports.aspx" Text="Emailed Reports">
+                    <GroupSettings ExpandDirection="Auto" Flow="Vertical" />
+                </telerik:RadMenuItem>
+                <telerik:RadMenuItem runat="server" ExpandMode="ClientSide" 
+                    Text="Administration" PostBack="False">
+                    <Items>
+                        <telerik:RadMenuItem runat="server" ExpandMode="ClientSide" 
+                            NavigateUrl="InternationalCodes.aspx" Text="International Codes" 
+                            Visible="False">
+                            <GroupSettings ExpandDirection="Auto" Flow="Vertical" />
+                        </telerik:RadMenuItem>
+                        <telerik:RadMenuItem runat="server" ExpandMode="ClientSide" 
+                            NavigateUrl="Products.aspx" Text="Products">
+                            <GroupSettings ExpandDirection="Auto" Flow="Vertical" />
+                        </telerik:RadMenuItem>
+                        <telerik:RadMenuItem runat="server" NavigateUrl="Servers.aspx" Text="Servers">
+                        </telerik:RadMenuItem>
+                        <telerik:RadMenuItem runat="server" NavigateUrl="Statuses.aspx" Text="Statuses">
+                        </telerik:RadMenuItem>
+                        <telerik:RadMenuItem runat="server" NavigateUrl="~/NumberBankManager.aspx" 
+                            Text="Number Banks" Visible="False">
+                        </telerik:RadMenuItem>
+                        <telerik:RadMenuItem runat="server" NavigateUrl="~/AdministratorManager.aspx" 
+                            Text="Administrator Manager">
+                        </telerik:RadMenuItem>
+                        <telerik:RadMenuItem runat="server" NavigateUrl="~/Routing.aspx" 
+                            Text="Number Routing" Visible="False">
+                        </telerik:RadMenuItem>
+                        <telerik:RadMenuItem runat="server" NavigateUrl="~/ConfigGUI.aspx" 
+                            Text="Configuration Settings" Visible="False">
+                        </telerik:RadMenuItem>
+                        <telerik:RadMenuItem runat="server" NavigateUrl="~/SystemEmailTemplates.aspx" 
+                            Text="System Email Templates" Visible="True">
+                        </telerik:RadMenuItem>
+                        <telerik:RadMenuItem runat="server" NavigateUrl="~/CompanySearch.aspx" 
+                            Text="Company Groupcode Search">
+                        </telerik:RadMenuItem>
+                        <telerik:RadMenuItem runat="server" Text="Credit Administration" 
+                            NavigateUrl="~/CreditAdministration.aspx">
+                        </telerik:RadMenuItem>
+                    </Items>
+                    <GroupSettings ExpandDirection="Auto" Flow="Vertical" />
+                </telerik:RadMenuItem>
+                <telerik:RadMenuItem runat="server" Text="Stratus" Visible="False">
+                    <Items>
+                        <telerik:RadMenuItem runat="server" NavigateUrl="~/StratusConfigurations.aspx" 
+                            Text="Stratus Configuration">
+                        </telerik:RadMenuItem>
+                        <telerik:RadMenuItem runat="server" NavigateUrl="~/StratusDestinations.aspx" 
+                            Text="Stratus Destinations">
+                        </telerik:RadMenuItem>
+                        <telerik:RadMenuItem runat="server" NavigateUrl="~/StratusRateSheet.aspx" 
+                            Text="Stratus Company Rate Sheet" Visible="true">
+                        </telerik:RadMenuItem>
+                    </Items>
+                </telerik:RadMenuItem>
+                <telerik:RadMenuItem runat="server" ExpandMode="ClientSide" 
+                    NavigateUrl="TechnicalSupport.aspx" Text="Technical Support">
+                    <GroupSettings ExpandDirection="Auto" Flow="Vertical" />
+                </telerik:RadMenuItem>
+                <telerik:RadMenuItem runat="server" ExpandMode="ClientSide" NavigateUrl="" 
+                    Text="Downloads" PostBack="False">
+                    <GroupSettings ExpandDirection="Auto" Flow="Vertical" />
+                    <Items>
+                        <telerik:RadMenuItem runat="server" Text="Admin Manual">
+                        </telerik:RadMenuItem>
+                        <telerik:RadMenuItem runat="server" Text="User Manual">
+                        </telerik:RadMenuItem>
+                        <telerik:RadMenuItem runat="server" Text="Release Notes" 
+                            NavigateUrl="~/ReleaseNotes.aspx">
+                        </telerik:RadMenuItem>
+                        <telerik:RadMenuItem runat="server" Text="Application Releases" 
+                            NavigateUrl="cubesupport.amvia.co.za" Target="_blank" Visible="False">
+                        </telerik:RadMenuItem>
+                        <telerik:RadMenuItem runat="server" NavigateUrl="uploadfiles.aspx" Owner="" 
+                            Text="Upload Files">
+                        </telerik:RadMenuItem>
+                    </Items>
+                </telerik:RadMenuItem>
+            </Items>
+            <ExpandAnimation Type="OutQuart" />
+
+<CollapseAnimation Duration="200" Type="OutQuint"></CollapseAnimation>
+        </telerik:RadMenu>
+    
+    </div>
+    
+    <div class="page">
+        <div class="main">
+            <asp:ContentPlaceHolder ID="MainContent" runat="server">
+                <telerik:RadWindowManager ID="RadWindowManager1" runat="server" 
+                    Behavior="Close" DestroyOnClose="true" Height="500px" Modal="True" 
+                    style="z-index:900000" VisibleStatusbar="False" Width="585px">
+                    <Windows>
+                        <telerik:RadWindow ID="OpenUsers" runat="server" Height="500px" Left="150px" 
+                            Modal="true" ReloadOnShow="true" Title="User Maintenance" Width="585px" />
+                    </Windows>
+                </telerik:RadWindowManager>
+                <telerik:RadStyleSheetManager ID="RadStyleSheetManager1" runat="server">
+                </telerik:RadStyleSheetManager>
+            </asp:ContentPlaceHolder>
+        </div>
+    </div>
+    <div class="footer">
+     <div align="right" style="width:auto; margin-left:auto;margin-right:15px;">
+     CUBE 2007-2010 &copy; Vox Amvia Fax Solutions 
+     </div>
+    </div>
+    <div class="footer" >
+        
+        <div align="center" style="width:50%; margin-left:auto;margin-right:auto;">
+            This web application is best viewed with the following browsers Internet 
+            Explorer 6.0 and above or in Mozilla Firefox 2.0 and above or Google Chrome and 
+            above. Recommended resolution is 1280*1024 (minimal 1280*768).Please ensure that 
+            you have javascript enabled on your browser.
+        </div>
+    </div>
+    </form>
+</body>
+</html>

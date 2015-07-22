@@ -1,0 +1,90 @@
+﻿<%@ Master Language="VB" AutoEventWireup="false" CodeBehind="Pastelfax.master.vb" Inherits="CUBE.Pastelfax" %>
+<%@ Register Assembly="Telerik.Web.UI" Namespace="Telerik.Web.UI" TagPrefix="telerik" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title></title>
+    <link href="~/Styles/CUBE.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript">
+        function onLoad(sender, eventArgs) {
+            sender.get_items(); //This is enough to force Items initialization.
+        }
+
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-19189378-1']);
+        _gaq.push(['_setDomainName', '.voxamvia.co.za']);
+        _gaq.push(['_trackPageview']);
+
+        (function () {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+    </script>
+    <asp:ContentPlaceHolder ID="HeadContent" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="Form1" runat="server">
+    <telerik:RadScriptManager ID="radmanDefault" runat="server">
+    </telerik:RadScriptManager>
+    <telerik:RadWindowManager ID="rwmDefault" runat="server">
+    </telerik:RadWindowManager>
+    <telerik:RadAjaxManager ID="radajaxDefault" runat="server" 
+        DefaultLoadingPanelID="rlpDefault" >
+    </telerik:RadAjaxManager>
+    <telerik:RadAjaxLoadingPanel ID="rlpDefault" runat="server" Skin="Default">
+    </telerik:RadAjaxLoadingPanel>
+
+    <div class="pageheader">
+        <asp:Literal ID="lHeader" runat="server"></asp:Literal>
+    </div>
+    <div id="menu">
+    
+        <telerik:RadMenu ID="RadMenu1" runat="server" Width="100%" 
+            style="margin-right: 7px">
+            <DefaultGroupSettings ExpandDirection="Auto" Flow="Vertical" />
+            <CollapseAnimation Duration="200" Type="OutQuint" />
+            <Items>
+                <telerik:RadMenuItem runat="server" ExpandMode="ClientSide" 
+                    Text="Downloads">
+                    <Items>
+                        <telerik:RadMenuItem runat="server" ExpandMode="ClientSide" Text="User Manual">
+                            <GroupSettings ExpandDirection="Auto" Flow="Vertical" />
+                        </telerik:RadMenuItem>
+                    </Items>
+                    <GroupSettings ExpandDirection="Auto" Flow="Vertical" />
+                </telerik:RadMenuItem>
+                <telerik:RadMenuItem runat="server" ExpandMode="ClientSide" 
+                    NavigateUrl="Login.aspx" Text="Home">
+                    <GroupSettings ExpandDirection="Auto" Flow="Vertical" />
+                </telerik:RadMenuItem>
+            </Items>
+            <ExpandAnimation Type="OutQuart" />
+        </telerik:RadMenu>
+    
+    </div>
+    
+    <div class="page">
+        <div class="main">
+            <asp:ContentPlaceHolder ID="MainContent" runat="server"/>
+        </div>
+    </div>
+    <div class="footer">
+     <div align="right" style="width:auto; margin-left:auto;margin-right:15px;">
+     CUBE 2007-2010 &copy; VoxAmvia Fax Solutions 
+     </div>
+    </div>
+    <div class="footer" >
+        
+        <div align="center" style="width:50%; margin-left:auto;margin-right:auto;">
+            This web application is best viewed with the following browsers Internet 
+            Explorer 6.0 and above or in Mozzila Firefox 2.0 and above or Google Chrome and 
+            above. Recommended resolution is 1280*1024 (minimal 1280*768).Please ensure that 
+            you have javascript enabled on your browser.
+        </div>
+    </div>
+    </form>
+</body>
+</html>

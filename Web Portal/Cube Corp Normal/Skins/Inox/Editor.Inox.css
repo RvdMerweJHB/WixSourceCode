@@ -1,0 +1,1556 @@
+/* RadEditor Inox Skin */
+
+.rade_toolbar.Inox li .rade_tool_text span
+{
+	background-image: url('Editor/CommandSprites.gif');
+	background-repeat: no-repeat;
+	width: 25px;
+	height: 23px;
+	line-height: 23px;
+}
+
+.rade_toolbar.Inox li .rade_tool_text
+{
+	height: 23px;
+	margin: 3px 1px 1px 1px;
+	color: white;
+	font: normal 11px Arial, Verdana, Sans-serif;
+}
+
+.rade_toolbar.Inox li .rade_tool_text:hover,
+.rade_toolbar.Inox li .rade_tool_text.rade_tool_selected
+{
+	border: solid 1px #6e9700;
+	margin: 2px 0 0 0;
+	background-color: #d3eb99;
+    background-image: none;
+}
+
+.rade_toolbar.Inox li .rade_tool_text:hover,
+.rade_toolbar.Inox li .rade_tool_text.rade_tool_selected
+{
+	_border: 0 !important;
+}
+
+.rade_toolbar.Inox li .rade_tool_text .rade_button_text
+{
+	padding-right: 4px;
+	color: black;
+}
+
+/* This color must coincide with back color defined in .rade_wrapper */
+.Inox.rade_toolbarWrapper
+{
+	background-color: #d0d6e4 !important;
+}
+
+.Inox.rade_toolZone .rade_toolbarWrapper
+{
+	background: transparent;
+	float: none;
+	clear: both;
+}
+
+/* Editor Wrapper */
+.radeditor.Inox.rade_wrapper
+{
+	font: normal 11px Arial, Verdana, Sans-serif;
+	border: 1px solid #868b8f;
+	border-top: solid 1px #3f3f3f;
+}
+
+.rade_tlbVertical
+{
+	width: 2px; font-size:1px;
+}
+
+.radeditor.Inox.rade_wrapper table td.rade_contentCell
+{
+	border: solid 1px #c8c8c8;
+	padding: 7px;
+	padding-bottom: 0;
+	background: #acb2c8 url('Editor/ContentCellBgr.gif');
+}
+
+.radeditor.Inox.rade_wrapper table td.rade_contentCell iframe
+{
+    border: solid 1px #969696;
+    border-bottom: 0;
+    background: white;
+}
+
+.Inox.rade_AlignmentSelector
+{
+	border: solid 1px #777;
+	background: white;	
+}
+
+.Inox.rade_AlignmentSelector div
+{
+	width: 18px;
+	height: 18px;
+	margin: 1px auto;
+	background-image: url('Editor/CommandSprites.gif');
+	background-repeat: no-repeat;
+}
+
+.rade_NoAlignment
+{
+	background-position: -2339px 0;
+}
+
+.rade_TopLeft
+{
+	background-position: -2507px -10px;
+}
+
+.rade_TopCenter
+{
+	background-position: -2537px -10px;
+}
+
+.rade_TopRight
+{
+	background-position: -2567px -10px;
+}
+
+.rade_MiddleLeft
+{
+	background-position: -2597px -10px;
+}
+
+.rade_MiddleCenter
+{
+	background-position: -2627px -10px;
+}
+
+.rade_MiddleRight
+{
+	background-position: -2657px -10px;
+}
+
+.rade_BottomLeft
+{
+	background-position: -2687px -10px;
+}
+
+.rade_BottomCenter
+{
+	background-position: -2717px -10px;
+}
+
+.rade_BottomRight
+{
+	background-position: -2747px -10px;
+}
+
+/* SpinBox */
+.Inox.rade_SpinBox li
+{
+	float: none; clear: both;
+	line-height: 11px;
+	margin: 0 0 1px 1px;
+}
+
+.Inox.rade_SpinBox input
+{	
+	border: solid 1px #818181;
+	height: 19px; line-height: 19px;
+	background: white;
+}
+
+.Inox.rade_SpinBox label
+{
+	width: 100px;
+	line-height: 24px;
+}
+
+.Inox.rade_SpinBox a
+{
+	border: solid 1px #818181;
+	text-align: center;
+	font: bold 10px Arial, Verdana, Sans-serif;
+	color: #818181;
+	background: #fff;
+}
+
+.Inox.rade_SpinBox a:hover
+{
+	background: #fff;
+	border: solid 1px #333;
+	color: #333;
+}
+
+.Inox.rade_SpinBox a span
+{
+	width: 9px; height: 9px; line-height: 9px;
+}
+
+/*============================== Rounded corners ===========================================*/
+.radeditor.Inox.rade_wrapper
+{
+	height:480px;
+	width:640px;
+}
+
+.radeditor.Inox .rade_wrapper_corner
+{
+    width: 1px; height: 1px; line-height: 1px; font-size:1px;
+    background: #d0d6e4;
+}
+
+.radeditor.Inox .rade_wrapper_center
+{		
+	height: 4px; line-height: 4px; font-size:1px;
+}
+
+.rade_center_top,
+.rade_leftVerticalSide,
+.rade_rightVerticalSide,
+.rade_toolZone,
+.rade_center_bottom
+{
+	background-color: #d0d6e4 !important;
+}
+
+/*=============== Editor modules ====================================*/
+.rade_module
+{
+	color: #333;
+	font: normal 11px Arial, Tahoma, sans-serif;
+	line-height:normal;
+	padding: 1px 5px;
+	border: 1px solid #b7bccc;
+	background:#e3e7f1;	
+}
+
+/*=====  modules switcher  =====*/
+.rade_module_visible_icon,
+.rade_module_hidden_icon
+{
+	width: 16px;
+	height: 16px;
+	background: transparent url('Editor/CommandSprites.gif') no-repeat;
+	margin: -2px 4px 0;
+}
+
+.rade_module_visible_icon
+{
+	background-position: -2368px -2px;
+}
+
+.rade_module_hidden_icon
+{
+	background-position: -2368px -24px;
+}
+
+/*=====  built-in modules specific: DOM Paths  =====*/
+a.rade_module_domlink
+{
+	color:#333;
+	font: normal 11px Tahoma;
+	padding: 3px 6px 1px;
+	text-decoration: underline;
+}	
+
+a.rade_module_domlink_selected
+{
+	color:#333;
+	font: normal 11px Tahoma;
+	text-decoration: none;
+	background-color:#eee;
+	border:1px solid #898989;
+	padding:0 5px;
+}
+
+/*=============== Editor resizer====================================*/
+.radeditor.Inox .rade_resizeCell div
+{
+    width:20px;
+    height:25px;
+    float:right;
+    background:url('Editor/CornersSprites.gif') center -74px no-repeat; 
+}
+
+
+
+/* ======================== Editor AJAX Spellcheck ====================================*/
+.rade_loading
+{
+    width:30px;
+    background:url('Editor/LoadingSpell.gif') center center no-repeat;
+    float:left;
+}
+
+/* use it to style the <button>s and the text <label>s inside */
+.rade_ajaxspell_wrapper
+{
+    border: 1px solid #515151 !important;    
+}
+
+.rade_ajaxspell_addicon,
+.rade_ajaxspell_ignoreicon,
+.rade_ajaxspell_okicon
+{
+    width: 16px !important;
+    height: 16px;
+    border: 0;
+    margin: 2px 4px 0 0;
+    background:url('Editor/CommandSprites.gif') no-repeat; 
+}
+
+.rade_ajaxspell_ignoreicon
+{
+	background-position: -2407px -1px;
+}
+
+.rade_ajaxspell_okicon
+{
+	background-position: -2433px -1px;
+}
+
+.rade_ajaxspell_addicon
+{
+	background-position: -2463px -1px;
+}
+
+/* BUTTON IN the 'manual change' popup */
+button.rade_ajaxspell_okicon
+{
+    width: 22px;
+    height: 22px;
+}
+
+/*============================== Editor modes ==============================================*/
+div.rade_editorModes
+{
+	width: 100%;
+    position: relative; top: -1px; left: 8px;
+}
+
+.radeditor.Inox .rade_editorModesCell
+{
+    width:100px ;   
+}
+
+div.rade_editorModes a
+{
+	width: 27px; height: 21px;
+	margin: 1px;
+	margin-top: 0;
+}
+
+div.rade_editorModes .rade_mode_selected
+{
+	background-color: white;
+	border: solid 1px #C8C8C8;
+	border-top: 0;
+	margin: 0;
+}
+
+div.rade_editorModes a span
+{
+	background-image: url('Editor/ModesSprites.gif');
+	background-repeat: no-repeat;
+	background-color: transparent;
+	height: 16px;
+	width: 16px;
+	margin: 2px 0 0 6px;
+}
+
+div.rade_editorModes .rade_mode_design span,
+div.rade_editorModes .rade_mode_selected.rade_mode_design span
+{
+	background-position: 0 0;
+}
+
+div.rade_editorModes .rade_mode_html span,
+div.rade_editorModes .rade_mode_selected.rade_mode_html span
+{
+	background-position: -16px 0;
+}
+
+div.rade_editorModes .rade_mode_preview span,
+div.rade_editorModes .rade_mode_selected.rade_mode_preview span
+{
+	background-position: -32px 0;
+}
+
+.Inox.rade_dropDownBody
+{
+	background-color: #c1c8d8 !important;
+	background-image: none !important;
+	border: solid 1px #8f8f8f;
+	-moz-border-radius: 0.3em;
+	border-radius: 0.3em; 
+	-webkit-border-radius: 0.3;
+	scrollbar-face-color: #e9e9e9;
+	scrollbar-highlight-color: #ffffff;
+	scrollbar-shadow-color: #e9e9e9;
+	scrollbar-3dlight-color: #dbdbdb;
+	scrollbar-arrow-color: #787878;
+	scrollbar-track-color: #f5f5f5;
+	scrollbar-darkshadow-color: #aeaeae;
+}
+
+.Inox.rade_dropDownBody,
+.Inox.rade_dropDownBody table /*quirks mode*/
+{
+	font:12px arial,verdana,sans-serif;
+}
+
+.Inox.rade_dropDownBody .rade_toolbar.Inox
+{
+    height: auto;
+    background:white;
+}
+
+.Inox.rade_dropDownBody a
+{
+    background-image: none;
+    background-color: white;
+    border-bottom: solid 1px #aaaaaa;
+    margin: 0;
+}
+
+.Inox.rade_dropDownBody a:hover
+{
+    background-image: none;
+    background-color: #d0d6e4;
+    border-bottom: solid 1px #000080;
+}
+
+.Inox.rade_dropDownBody .rade_CustomLinks a
+{
+    background-image: none;
+    background-color: white;
+    border-bottom: 0;
+}
+
+.Inox.rade_dropDownBody .rade_CustomLinks a:hover
+{
+    background-image: none;
+    background-color: white;
+    text-decoration: underline;
+    border-bottom: 0;
+}
+
+.Inox.rade_dropDownBody table td
+{
+	padding:1px 2px;
+	border:1px solid #fff;
+	color:#000;
+	text-align:left;
+}
+
+.Inox.rade_dropDownBody .rade_itemOver
+{
+	border: solid 1px #000080 !important;
+	background: #c1c8d8 !important;
+}
+
+.Inox.rade_ColorPicker
+{
+	border: solid 1px #868686;
+	padding: 4px;
+	-moz-border-radius: 3px;
+	background: #fafafa;
+}
+
+.Inox.rade_ColorPicker table div
+{
+	width: 11px; height: 11px; line-height: 11px; font-size: 1px;
+	border: solid 1px #c5c5c5;
+}
+
+.Inox.rade_ColorPicker table td.rade_itemOver div
+{
+	border-color:#000;
+}
+
+.Inox.rade_ColorPicker table td
+{
+	padding: 2px;
+	padding-bottom: 0;
+	padding-top: 0;
+}
+
+.Inox.rade_dropDownBody.rade_ColorPicker table td.rade_itemOver
+{
+	border: 0 !important;
+	background: transparent !important;
+}
+
+.Inox.rade_ColorPicker .rade_ColorPickerFooter
+{
+	margin:0 auto;
+	font: normal 11px Verdana, Arial, Sans-serif;
+	height: 22px;
+	line-height: 18px;
+	width: 166px;
+	padding:4px 0;
+}
+
+.Inox.rade_ColorPicker span
+{
+	width: 82px;
+	height: 20px;
+	line-height: 18px;
+	border: solid 1px #c5c5c5;
+}
+
+.rade_ColorPicker .rade_ColorPickerFooter .rade_DarkColor
+{
+	background: black;
+	color: white;
+	border-right:0;
+}
+
+.rade_ColorPicker .rade_ColorPickerFooter .rade_LightColor
+{
+	background: white;
+	color: black;
+	border-left:0;
+}
+
+.rade_InsertSymbol
+{
+	border: solid 1px #8f8f8f;
+	background: white;
+	width: auto !important;
+}
+
+.Inox.rade_InsertSymbol table
+{
+	width: auto !important;
+}
+
+.Inox.rade_InsertSymbol table td
+{
+	font: bold 11px Tahoma,"Lucida Grande",Verdana,Arial,Helvetica,sans-serif;
+	color: #333;
+	width: 18px !important;
+	height: 22px !important;
+	padding: 2px;
+	text-align: center;
+	vertical-align: middle;
+}
+
+.Inox.rade_InsertSymbol table td.rade_itemOver
+{
+	color: #000;
+}
+
+/* /DROPDOWNS: INSERT TABLE ELEMENT */
+.rade_InsertTable table
+{
+	float: left;
+	background-color:#f9f9f9;
+	cursor:default;	
+	width: 142px;
+}
+
+.rade_InsertTable td 
+{
+	padding:0 !important;
+	border-color: #777 !important;
+}
+
+.rade_InsertTable td.rade_itemOver
+{
+	border-color: #ddd !important;
+}
+
+.rade_InsertTable td div
+{	
+	font-size:1px;
+	width:10px;
+	height: 10px;
+	margin:1px !important;
+	padding:0 !important;
+}
+
+.rade_InsertTable .rade_tlbVertical li
+{
+	float: left !important;
+	width: 23px;
+	margin: 0;
+}
+
+.rade_InsertTable .rade_tlbVertical li a,
+.Inox.rade_InsertTable .rade_tlbVertical .Inox.rade_toolbar a.rade_tool_disabled
+{
+    background: none !important;
+    margin: 0 !important;
+    padding: 1px !important;
+    border: 0 !important;
+}
+
+.rade_InsertTable .rade_tlbVertical li a:hover
+{
+	border: 1px solid #ccc !important;
+	padding: 0 !important;
+}
+
+.Inox.rade_InsertTable .rade_tlbVertical li a .rade_button_text
+{
+	width: auto !important;
+	padding-left: 4px;
+	color: #ccc;
+}
+
+.Inox.rade_InsertTable .rade_tlbVertical li a .rade_button_text:hover
+{
+	color: black;
+}
+
+.rade_UndoRedo
+{
+	border: solid 1px #8f8f8f;
+	background-color: white;
+	padding: 0;
+}
+
+.Inox.rade_UndoRedo table td,
+.Inox.rade_UndoRedo table td.rade_itemOver
+{
+	border: 0 !important;
+	margin: 0 !important;
+}
+
+.Inox.rade_ApplyClass table td
+{
+	border: 1px solid #cacaca;
+	padding: 2px;
+}
+
+ .rade_ApplyClass span
+{
+	width: 12px; height: 13px; line-height: 13px;
+	background-image: url('Editor/ApplyClassSprites.gif');
+	background-repeat: no-repeat;
+}
+.rade_ApplyClass .rade_class_all
+{
+    background-position: 0 -52px;
+}
+
+.rade_ApplyClass .rade_class_img
+{
+    background-position: 0 -13px;
+}
+.rade_ApplyClass .rade_class_a
+{
+    background-position: 0 -26px;
+}
+.rade_ApplyClass .rade_class_table
+{
+    background-position: 0 -39px;
+}
+
+.rade_ApplyClass .rade_class_unknown
+{	
+    background-position: 0 0;
+}
+
+ul.rade_CustomLinks,
+ul.rade_CustomLinks ul
+{
+	font: normal 11px Verdana, Arial, Sans-serif;
+	color: black;
+	background: none;	
+}
+
+ul.rade_CustomLinks
+{
+	margin: 0 2px;
+}
+
+ul.rade_CustomLinks a
+{
+	color: black;
+}
+
+ul.rade_CustomLinks ul
+{
+	margin-left: 12px;
+}
+
+ul.rade_CustomLinks a:hover
+{
+	text-decoration: underline;
+	color: #666;
+}
+
+ul.rade_CustomLinks li
+{
+	padding: 1px 0;
+}
+
+ul.rade_CustomLinks a
+{
+	cursor: hand; cursor: pointer;
+}
+
+ul.rade_CustomLinks .rade_CustomLinksIcon
+{
+	width: 9px; height: 9px;
+	background-image: url('Editor/CustomLinksSprites.gif');
+	background-repeat: no-repeat;
+	margin: 2px 4px 0 0;
+}
+
+ul.rade_CustomLinks .rade_CustomLinksIcon.rade_icon_plus
+{
+	background-position: 0 0;
+}
+
+ul.rade_CustomLinks .rade_CustomLinksIcon.rade_icon_minus
+{
+	background-position: -9px 0;
+}
+
+ul.rade_CustomLinks .rade_CustomLinksIcon.rade_icon_empty
+{
+	background: none;
+}
+
+/* Toolbar css */
+.Inox.rade_toolbar
+{
+	background: transparent url('Editor/ToolBarSprites.gif') repeat-x 0 -242px; 
+	height: 20px;
+	border: solid 1px #b4b4bc;
+	margin: 1px 0;
+}
+
+* html .radeditor{background-image: none !important}
+
+.rade_tool
+{
+	width: 22px; height: 20px;
+	padding: 0 0 0 0;
+}
+
+.rade_tool:hover
+{
+	padding: 0 0 0 0;
+	background: url('Editor/ToolBarSprites.gif') repeat-x 0 -217px;
+}
+
+.rade_tool:active,
+.rade_tool:focus,
+.rade_tool_selected,
+.rade_tool_selected:hover,
+.rade_tool_selected:active,
+.rade_tool_selected:focus
+{
+	background: url('Editor/ToolBarSprites.gif') repeat-x 0 -192px;
+}
+
+.rade_tool_disabled,
+.rade_tool_disabled:hover,
+.rade_tool_disabled:active,
+.rade_tool_disabled:focus
+{
+	border: 0;
+	background: none;
+}
+
+.rade_dropDownBody .rade_tlbVertical .Inox.rade_toolbar .rade_tool_text
+{
+	background: transparent url('Editor/ToolbarVerticalSprites.gif') repeat-y -40px 0;
+	border: 0;
+	padding: 3px 1px 3px 3px;
+	margin: 0 1px;
+}
+
+.rade_dropDownBody .rade_tlbVertical .Inox.rade_toolbar .rade_tool_text:hover,
+.rade_dropDownBody .rade_tlbVertical .Inox.rade_toolbar .rade_tool_selected
+{
+	border: 1px solid #000080;
+	padding: 2px 0 2px 2px;
+	background: #d0d6e4;
+	color: #fff;
+}
+
+.Inox.rade_dropDownBody .rade_tlbVertical .Inox.rade_toolbar .rade_tool_disabled
+{
+	background: transparent url('Editor/ToolbarVerticalSprites.gif') repeat-y -40px 0 !important;
+	border: 0;
+	padding: 1px;
+	color: #000;
+}
+
+.Inox.rade_dropDownBody .rade_tlbVertical .Inox.rade_toolbar .rade_tool_text span.rade_button_text
+{
+	padding-left: 13px;
+}
+
+.Inox.rade_dropDownBody .rade_tlbVertical .Inox.rade_toolbar .rade_tool_disabled span
+{
+	opacity: 0.4;
+	-moz-opacity: 0.4;
+	filter: alpha(opacity=40);
+}
+
+.rade_tool span
+{
+	background-image: url('Editor/CommandSprites.gif');
+	background-repeat: no-repeat;
+	background-color: transparent;
+	height: 23px;
+}
+
+.rade_toolbar.Inox .rade_dropdown,
+.rade_toolbar.Inox .rade_tool_disabled.rade_dropdown:hover
+{
+	height: 16px;
+	border: solid 1px #e8e8f0 !important;
+	margin: 0 0 2px 0;
+	padding: 2px 14px 0 2px;
+	font: normal 11px Verdana, Arial, Sans-serif;
+	color: black;
+	background: #e8e8f0 url('Editor/ToolBarSprites.gif') no-repeat right -92px;
+	-moz-border-radius: 0.3em;
+	-moz-border: 0.3em;
+	-webkit-border-radius: 0.3;
+}
+
+.rade_toolbar.Inox .rade_dropdown:hover,
+.rade_toolbar.Inox .rade_dropdown:active,
+.rade_toolbar.Inox .rade_dropdown:focus
+{
+	border: solid 1px #95a8c9 !important;
+	background-color: #f3f4f7;
+}
+
+* html .rade_dropDownBody .rade_tlbVertical .rade_toolbar.Inox .rade_tool_disabled,
+* html .rade_dropDownBody .rade_tlbVertical .rade_toolbar.Inox .rade_tool_disabled:hover,
+* html .rade_dropDownBody .rade_tlbVertical .rade_toolbar.Inox .rade_tool_disabled:active,
+* html .rade_dropDownBody .rade_tlbVertical .rade_toolbar.Inox .rade_tool_disabled:focus
+{
+	border: 0 !important;
+	padding:1px !important;
+	background:transparent url('Editor/ToolbarVerticalSprites.gif') repeat-y -40px 0 !important;
+}
+
+.rade_tlbVertical .rade_dropdown
+{
+	width: 4px;
+}
+
+.rade_toolbar.Inox .rade_grip
+{
+	background-image: url('Editor/ToolBarSprites.gif');
+	background-repeat: no-repeat;
+	width: 2px; height: 20px;
+}
+
+.rade_toolbar.Inox .grip_first
+{
+	background-position: 0 -271px;
+}
+
+.rade_toolbar.Inox .grip_last
+{
+	background-position: -39px -271px;
+}
+
+.rad_splitbutton
+{
+	width: 32px;
+}
+
+.rad_splitbutton:hover
+{
+    background: transparent url('Editor/ToolBarSprites.gif') no-repeat 0 -167px !important;
+}
+
+.rade_tool_disabled:hover
+{
+	background: none !important;
+}
+
+.rad_splitbutton span
+{
+	width: 25px;
+}
+
+.split_arrow
+{
+	background: transparent url('Editor/ToolBarSprites.gif') no-repeat 0 -108px !important;
+	width: 5px !important;
+	height: 22px;
+	padding: 0 1px 0 1px;
+}
+
+.rade_toolbar.Inox li.rade_separator
+{
+	border-left: solid 1px #d6d7db;
+	background: #fcfdff;
+	height: 20px; width: 1px;
+	margin: 0 2px;
+}
+
+/* -- COMMANDS BEGIN -- */
+.rade_toolbar.Inox .AboutDialog
+{
+	background-position: 4px 4px;
+}
+
+.AbsolutePosition
+{
+	background-position: -16px -17px;
+}
+
+.AjaxSpellCheck
+{
+	background-position: -38px 0;
+}
+
+.BackColor, .borderColor, .bgColor
+{
+	background-position: -60px 0;
+}
+
+.Bold
+{
+	background-position: -78px 1px;
+}
+
+.BringToFront
+{
+	background-position: -100px 0;
+}
+
+.Cancel
+{
+	background-position: -117px 0;
+}
+
+.Cancel
+{
+	background-position: -117px 0;
+}
+
+.ConvertToLower
+{
+	background-position: -138px 0;
+}
+
+.ConvertToUpper
+{
+	background-position: -157px -21px;
+}
+
+.Copy
+{
+	background-position: -179px 0;
+}
+
+.CreateLink
+{
+	background-position: -199px 0;
+}
+
+.Custom
+{
+	background-position: -219px 0;
+}
+
+.CustomLinkTool
+{
+	background-position: -237px -21px;
+}
+
+.ViewHtml
+{
+	background-position: -219px 0;
+}
+
+.CustomDialog
+{
+	background-position: -239px 0;
+}
+
+.rade_toolbar.Inox .Cut
+{
+	background-position: -259px -20px;
+}
+
+.DecreaseSize
+{
+	background-position: -279px 0;
+}
+
+.DeleteCell
+{
+	background-position: -299px 0;
+}
+
+.DeleteColumn
+{
+	background-position: -319px 0;
+}
+
+.DeleteRow
+{
+	background-position: -338px 0;
+}
+
+.DeleteTable
+{
+	background-position: -359px 0;
+}
+
+.DocumentManager
+{
+	background-position: -379px -18px;
+}
+
+.FileOpen
+{
+	background-position: -399px 0;
+}
+
+.FileSave
+{
+	background-position: -418px 0;
+}
+
+.FileSaveAs
+{
+	background-position: -439px 0;
+}
+
+.FindAndReplace
+{
+	background-position: -457px -18px;
+}
+
+.FlashManager
+{
+	background-position: -477px -2px;
+}
+
+.ForeColor
+{
+	background-position: -498px 0;
+}
+
+.FormatCodeBlock
+{
+	background-position: -519px 0;
+}
+
+.FormatStripper
+{
+	background-position: -539px 0;
+}
+
+.Help
+{
+	background-position: -2938px 3px;
+}
+
+.ImageManager
+{
+	background-position: -576px -16px;
+}
+
+.ImageMapDialog
+{
+	background-position: -599px 0;
+}
+
+
+.IncreaseSize
+{
+	background-position: -617px 0;
+}
+
+.Indent
+{
+	background-position: -637px -17px;
+}
+
+.InsertAnchor
+{
+	background-position: -660px 0;
+}
+
+.InsertCodeSnippet
+{
+	background-position: -681px 0;
+}
+
+.InsertColumnLeft
+{
+	background-position: -699px 0;
+}
+
+.InsertColumnRight
+{
+	background-position: -719px 0;
+}
+
+.InsertDate
+{
+	background-position: -736px 0;
+}
+
+.InsertDocument
+{
+	background-position: -757px 0;
+}
+
+.InsertEmailLink
+{
+	background-position: -778px 0;
+}
+
+.InsertFlash
+{
+	background-position: -799px 0;
+}
+
+.InsertFormButton
+{
+	background-position: -819px -21px;
+}
+
+.InsertFormCheckbox
+{
+	background-position: -834px 1px;
+}
+
+.InsertFormElement
+{
+	background-position: -858px 0;
+}
+
+.InsertFormForm
+{
+	background-position: -879px 4px;
+}
+
+.InsertFormHidden
+{
+	background-position: -897px -20px;
+}
+
+.InsertFormImageButton
+{
+	background-position: -917px 0;
+}
+
+.InsertFormPassword
+{
+	background-position: -937px 0;
+}
+
+.InsertFormPassword
+{
+	background-position: -937px -20px;
+}
+
+.InsertFormRadio
+{
+	background-position: -958px 1px;
+}
+
+.InsertFormReset
+{
+	background-position: -977px 0;
+}
+
+.InsertFormSelect
+{
+	background-position: -999px 0;
+}
+
+.InsertFormSubmit
+{
+	background-position: -999px -20px;
+}
+
+.InsertFormText
+{
+	background-position: -1037px -20px;
+}
+
+.InsertFormTextarea
+{
+	background-position: -1057px 1px;
+}
+
+.InsertGroupbox
+{
+	background-position: -1077px -20px;
+}
+
+.InsertHorizontalRule
+{
+	background-position: -1097px 0;
+}
+
+.InsertImage
+{
+	background-position: -1117px 0;
+}
+
+.InsertMedia
+{
+	background-position: -1137px 0;
+}
+
+.InsertOrderedList
+{
+	background-position: -1157px 0;
+}
+
+.rade_toolbar.Inox .InsertParagraph
+{
+	background-position: -1176px 0;
+}
+
+.InsertRowAbove
+{
+	background-position: -1197px 0;
+}
+
+.InsertRowBelow
+{
+	background-position: -1217px 0;
+}
+
+.InsertSnippet
+{
+	background-position: -1236px -17px;
+}
+
+.InsertSymbol
+{
+	background-position: -1257px 0;
+}
+
+.InsertTable
+{
+	background-position: -1277px 0;
+}
+
+.rade_toolbar.Inox .InsertTime
+{
+	background-position: -1298px 0;
+}
+
+.InsertUnorderedList
+{
+	background-position: -1318px 0;
+}
+
+.rade_toolbar.Inox .Italic
+{
+	background-position: -1338px 1px;
+}
+
+.JustifyCenter
+{
+	background-position: -1357px 0;
+}
+
+.rade_toolbar.Inox .JustifyFull
+{
+	background-position: -1377px 0;
+}
+
+.JustifyLeft
+{
+	background-position: -1397px 0;
+}
+
+.JustifyNone
+{
+	background-position: -1417px 0;
+}
+
+.JustifyRight
+{
+	background-position: -1438px 0;
+}
+
+.LinkManager
+{
+	background-position: -1456px -16px;
+}
+
+.MediaManager
+{
+	background-position:  -1138px -18px;
+}
+
+.MergeColumns
+{
+	background-position: -1498px 0;
+}
+
+.MergeRows
+{
+	background-position: -1518px 0;
+}
+
+.ModuleManager
+{
+	background-position: -1536px 0;
+}
+
+.rade_toolbar.Inox .Outdent
+{
+	background-position: -1558px 0;
+}
+
+.PageProperties
+{
+	background-position: -1578px 0;
+}
+
+
+.PasteStrip
+{
+	background-position: -1598px 0;
+}
+
+.Paste
+{
+	background-position: -1598px 0;
+}
+
+.PasteAsHtml
+{
+	background-position: -1619px 0;
+}
+
+.PasteFromWord
+{
+	background-position: -1641px 0;
+}
+
+.PasteFromWordNoFontsNoSizes
+{
+	background-position: -1663px 0;
+}
+
+.PasteHtml
+{
+	background-position: -1680px 0;
+}
+
+.PastePlainText
+{
+	background-position: -1699px 0;
+}
+
+.Print
+{
+	background-position: -1717px -18px;
+}
+
+.rade_toolbar.Inox .Redo
+{
+	background-position: -1737px 0;
+}
+
+.RepeatLastCommand
+{
+	background-position: -1759px 0;
+}
+
+.Save
+{
+	background-position: -1777px 0;
+}
+
+.SaveLocal
+{
+	background-position: -1797px 0;
+}
+
+.SelectAll
+{
+	background-position: -1817px -16px;
+}
+
+.SendToBack
+{
+	background-position: -1838px 0;
+}
+
+.SetCellProperties
+{
+	background-position: -1858px 0;
+}
+
+.SetImageProperties
+{
+	background-position: -1878px 0;
+}
+
+.SetLinkProperties
+{
+	background-position: -1898px 0;
+}
+
+.SetTableProperties
+{
+	background-position: -1918px 0;
+}
+
+.TableWizard
+{
+	background-position: -1278px 0;
+}
+
+
+.ShowHideBorder
+{
+	background-position: -1938px 0;
+}
+
+.SpellCheck
+{
+	background-position: -1958px 0;
+}
+
+.SplitCell
+{
+	background-position: -1977px 0;
+}
+
+.rade_toolbar.Inox .StrikeThrough
+{
+	background-position: -1997px 1px;
+}
+
+.StripAll
+{
+	background-position: -2018px -20px;
+}
+
+.StripCss
+{
+	background-position: -2038px 0;
+}
+
+.StripFont
+{
+	background-position: -2058px 0;
+}
+
+.StripSpan
+{
+	background-position: -2078px -20px;
+}
+
+.StripWord
+{
+	background-position: -2098px 0;
+}
+
+.Subscript
+{
+	background-position: -2118px 2px;
+}
+
+.Superscript
+{
+	background-position: -2138px -20px;
+}
+
+.Sweeper
+{
+	background-position: -2158px 0;
+}
+
+.TemplateManager
+{
+	background-position: -2178px -18px;
+}
+
+.ToggleBorders
+{
+	background-position: -2198px 0;
+}
+
+.ToggleDocking
+{
+	background-position: -2218px 0;
+}
+
+.rade_toolbar.Inox .ToggleScreenMode
+{
+	background-position: -2238px 0;
+}
+
+.ToggleTableBorder
+{
+	background-position: -2258px 0;
+}
+
+.Underline
+{
+	background-position: -2277px 0;
+}
+
+.rade_toolbar.Inox .Undo
+{
+	background-position: -2296px 0;
+}
+
+.Unlink
+{
+	background-position: -2319px 0;
+}
+
+.x
+{
+	background-position: -2339px 0;
+}
+
+.ToggleFloatingToolbar
+{
+    background-position: -2937px -22px;
+}
+
+.XhtmlValidator
+{
+	background-position: -2776px 0;
+}
+
+.TrackChangesDialog
+{
+	background-position: -2800px 0;
+}
+
+.ImageEditor
+{
+	background-position: -2839px 0;
+}
+
+.RadEXhtmlButton
+{
+    border: solid 1px #c7dbe6;
+    background: #f0f2f4;
+    color: black;
+    font: normal 11px Verdana, Arial, Sans-serif;
+}
+
+.Inox.rade_dropDownBody.rade_InsertTable .rade_button_text
+{
+    color: black !important;
+}
+
+.Inox.rade_dropDownBody.rade_InsertTable
+{
+    overflow: hidden;
+}

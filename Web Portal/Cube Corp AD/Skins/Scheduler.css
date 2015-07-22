@@ -1,0 +1,239 @@
+/* Common CSS */
+.RadScheduler.rsDefaultHeight
+{
+	height: 400px;
+}
+
+.RadScheduler .rsScrollingContent
+{
+    height: 1px;
+    overflow: auto;
+    overflow-x: auto;
+    overflow-y: scroll;
+    position: relative;
+}
+
+.RadScheduler .rsContent,
+.RadScheduler .rsAllDay,
+.RadScheduler .rsColumnHeader
+{
+	zoom: 1;
+}
+
+.RadScheduler .rsAllDayTable,
+.RadScheduler .rsColumnHeaderTable,
+.RadScheduler .rsContentTable
+{
+    width: 100%;
+    table-layout:fixed;
+}
+
+.RadScheduler .rsHoursWrapper
+{
+    position: relative;
+    height: 100%;
+}
+
+.RadScheduler .rsHoursContent
+{
+    position: absolute;
+    width: 100%;
+    left: 0;
+}
+            
+.RadScheduler .rsHoursTable
+{
+    table-layout:fixed;
+}
+
+.RadScheduler .rsAllDay
+{
+    position:relative;
+    z-index: 1;
+}
+
+.RadScheduler .rsContent
+{
+	position: relative;
+    z-index: 0;
+}
+
+.RadScheduler .rsWrap
+{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.RadScheduler .rsApt 
+{
+    height:100%;
+    overflow:hidden;
+    position:absolute;
+}
+
+/* IE6 bottom border fix */
+* html .RadScheduler .rsApt
+{
+	padding-bottom: 1px;
+}
+
+.RadScheduler .rsAptDelete 
+{
+    overflow:hidden;
+    position:absolute;
+    visibility:hidden;
+}
+
+.RadScheduler .rsAptEditFormWrap 
+{
+    height:100%;
+    position:relative;
+}
+
+.RadScheduler .rsAptEdit 
+{
+    position:absolute;
+    width:100%;  
+}
+
+.RadScheduler .rsEditOptions a 
+{
+    overflow:hidden;
+    text-indent:-4000px;
+}
+
+.RadScheduler .rsAptResize
+{
+    position:absolute;
+}
+
+.RadScheduler .rsAptInner
+{
+    overflow: hidden;
+    height: 100%;
+    width:100%;
+}
+
+.RadScheduler .rsAptWrap
+{
+    height: 100%;
+    position: relative;
+}
+
+.RadScheduler .rsAptBottom
+{
+	left: 0px;
+    bottom: 0px;
+    position: absolute;
+    width: 100%;
+}
+
+.RadScheduler .rsAllDayCell
+{
+	vertical-align: top;
+}
+
+.RadScheduler .rsPrevDay,
+.RadScheduler .rsNextDay
+{
+    position:absolute;
+    display:block;
+    overflow:hidden;
+    line-height:1000px;
+}
+
+.RadScheduler .rsHeader p 
+{
+	position:relative;
+}
+
+.RadScheduler .rsHeader
+{
+	zoom:1;
+}
+
+.RadScheduler .rsHeader:after
+{
+	content:".";
+	display:block;
+	clear:both;
+	height:0;
+	visibility:hidden;
+}
+
+.RadScheduler .rsArrowTop,
+.RadScheduler .rsArrowBottom,
+.RadScheduler .rsArrowLeft,
+.RadScheduler .rsArrowRight
+{
+    visibility:hidden;
+    position:absolute;
+    text-indent:-99em;
+    overflow:hidden;
+}
+
+.RadScheduler .rsWArrowTop .rsArrowTop,
+.RadScheduler .rsWArrowBottom .rsArrowBottom,
+.RadScheduler .rsWArrowLeft .rsArrowLeft,
+.RadScheduler .rsWArrowRight .rsArrowRight
+{
+    visibility:visible;
+}
+
+.RadScheduler .rsAptEditTextareaWrapper
+{
+	overflow: hidden;
+	zoom:1;
+	padding: 4px;
+	padding-left: 6px;
+}
+
+.RadScheduler .rsAptEditTextareaWrapper textarea 
+{
+    width: 100%;
+    margin: -3px;
+}
+
+.RadScheduler .rsAdvBasicControls,
+.RadScheduler .rsAdvMoreControls ul,
+.RadScheduler .rsAdvRecurrenceFreq,
+.RadScheduler .rsAdvRecurrencePatterns
+{
+	zoom:1;
+}
+
+.RadScheduler .rsAdvOptions
+{
+	overflow-y: auto;
+	position: relative;
+}
+
+.RadScheduler .rsModalContainer
+ {
+    position:absolute;
+    width:100%;
+    height:100%;
+    top:0;
+    left:0;
+    z-index:10000;
+    -moz-user-select: none;
+    background-color: #000;
+}
+
+.RadScheduler .rsShowMore
+{
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+.RadScheduler .rsAdvBasicControls li
+{
+	white-space: nowrap;
+	width: 220px;
+}
+
+.RadScheduler .rsAdvBasicControls ul li *
+{
+	vertical-align: middle;
+}

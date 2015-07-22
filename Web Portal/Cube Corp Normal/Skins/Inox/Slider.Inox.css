@@ -1,0 +1,124 @@
+/* r.a.d.slider Inox skin */
+
+/* -------------------------------------------------------- GLOBAL SLIDER CLASSES -------------------------------------------------------- */
+.RadSlider_Inox a
+{
+	cursor: hand;
+}
+
+/* -------------------------------------------------------- GLOBAL SLIDER CLASSES END ----------------------------------------------------- */
+
+/* -------------------------------------------------------- HORIZONTAL SLIDER CLASSES -------------------------------------------------------- */
+.RadSlider_Inox.horizontal
+{
+	height: 10px;
+}
+
+.RadSlider_Inox.horizontal a.handle
+{
+	width: 16px; height: 9px; line-height: 9px;
+	background-image: url(Slider/Handles.gif);
+	background-repeat: no-repeat;
+	margin-top: 1px;
+}
+
+.RadSlider_Inox.horizontal .decrease
+{
+	background-position: 0 0;
+}
+
+.RadSlider_Inox.horizontal .increase
+{
+	background-position: -16px 0;
+}
+
+.RadSlider_Inox.horizontal a.draghandle
+{
+	top: 0;
+	width: 41px; height: 10px; line-height: 10px;
+	margin-top: -3px;
+	background-image: url(Slider/DragHandle.gif);
+	background-repeat: no-repeat;
+}
+
+.RadSlider_Inox.horizontal a.draghandle:hover
+{
+	background-position: 0 -10px;
+}
+
+.RadSlider_Inox.horizontal a.draghandle:focus,
+.RadSlider_Inox.horizontal a.draghandle:active
+{
+	background-position: 0 -20px;
+}
+
+.RadSlider_Inox.horizontal .track
+{
+	left: 16px; top: 0;
+	margin-top: 2px;
+	height: 4px;
+	background: #a0a0a0 url(Slider/TrackBgr.gif) no-repeat center;
+	border: solid 1px #666;
+	border-left: 0;
+	border-right: 0;
+}
+/* -------------------------------------------------------- HORIZONTAL SLIDER CLASSES END ---------------------------------------------------- */
+/* -------------------------------------------------------- VERTICAL SLIDER CLASSES -------------------------------------------------------- */
+.RadSlider_Inox.vertical
+{
+	width: 10px;
+}
+
+.RadSlider_Inox.vertical a.handle
+{
+	width: 9px; height: 16px; line-height: 16px;
+	background-image: url(Slider/HandlesVertical.gif);
+	background-repeat: no-repeat;
+	margin-left: 1px;
+}
+
+.RadSlider_Inox.vertical .decrease
+{
+	background-position: 0 0;
+}
+
+.RadSlider_Inox.vertical .increase
+{
+	background-position: 0 -16px;
+}
+
+.RadSlider_Inox.vertical a.draghandle
+{
+	left: 0px;
+}
+
+.RadSlider_Inox.vertical .track
+{
+	left: 0; top: 16px;
+	margin-left: 2px;
+	width: 4px;
+	background: #a0a0a0 url(Slider/TrackVerticalBgr.gif) no-repeat center;
+	border: solid 1px #666;
+	border-top: 0;
+	border-bottom: 0;
+}
+
+.RadSlider_Inox.vertical a.draghandle
+{
+	top: 0; left: 0;
+	margin-left: -3px;
+	width: 10px; height: 41px;
+	background: url(Slider/DragVerticalHandle.gif) no-repeat;
+}
+
+.RadSlider_Inox.vertical a.draghandle:hover
+{
+	background-position: -10px 0;
+}
+
+.RadSlider_Inox.vertical a.draghandle:active, 
+.RadSlider_Inox.vertical a.draghandle:focus
+{
+	background-position: -20px 0;
+}
+/* -------------------------------------------------------- VERTICAL SLIDER CLASSES END ----------------------------------------------------- */

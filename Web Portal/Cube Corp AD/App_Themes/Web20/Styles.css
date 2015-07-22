@@ -1,0 +1,40 @@
+﻿.ContentHeader
+{
+	background-color: #92b4e0;
+	border: solid 1px #bac5d2;
+	background-repeat: repeat-x;
+	width: 100%;
+	font-size: 16px;
+	font-weight: bold;
+	color: White;
+	margin-bottom: 2px;
+}
+
+
+
+.TreeContainer
+{
+	border: solid 1px #92b4e0;
+}
+
+.SearchBox
+{
+	border: solid 1px #92b4e0;
+	background-color: #eeeeee;
+}
+
+hr
+{
+	height: 1px;
+	color: #869aaf;
+}
+
+a
+{
+	color: #3b6698;
+}
+
+a:hover 
+{
+	text-decoration: underline;
+}

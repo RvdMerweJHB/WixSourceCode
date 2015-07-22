@@ -1,0 +1,43 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+CubeCreditService
+</name>
+</assembly>
+<members>
+<member name="M:Cube_Credit_Service.Emailer.buildEmail(System.Guid,System.String)">
+	<summary>
+ Funtion will construct the email and then send out the email
+ </summary>
+	<param name="userID"></param>
+	<param name="templatename"></param>
+	<returns>boolean</returns>
+	<remarks></remarks>
+</member><member name="M:Cube_Credit_Service.Err.#ctor(System.String,System.String,System.DateTime,System.Int32,System.Int32,System.String)">
+	<summary>
+ Writes the error to the database [ErrorLevel Reports on the severity of the error 1=Critical, 2=High Attention, 3=Mild Attention, 4=Minor]
+ </summary>
+	<param name="Details"></param>
+	<param name="Message"></param>
+	<param name="ErrorDate"></param>
+	<param name="ErrorLevel"></param>
+	<param name="CompanyID"></param>
+	<param name="Username"></param>
+	<remarks></remarks>
+</member><member name="P:Cube_Credit_Service.My.Resources.Resources.ResourceManager">
+	<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member><member name="P:Cube_Credit_Service.My.Resources.Resources.Culture">
+	<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member><member name="T:Cube_Credit_Service.My.Resources.Resources">
+	<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+</members>
+</doc>

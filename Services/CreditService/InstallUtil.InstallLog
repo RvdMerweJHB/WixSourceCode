@@ -1,0 +1,28 @@
+﻿
+Running a transacted installation.
+
+Beginning the Install phase of the installation.
+See the contents of the log file for the C:\CubeServices\CubeCredit Service\Cube Credit Service.exe assembly's progress.
+The file is located at C:\CubeServices\CubeCredit Service\Cube Credit Service.InstallLog.
+
+The Install phase completed successfully, and the Commit phase is beginning.
+See the contents of the log file for the C:\CubeServices\CubeCredit Service\Cube Credit Service.exe assembly's progress.
+The file is located at C:\CubeServices\CubeCredit Service\Cube Credit Service.InstallLog.
+
+The Commit phase completed successfully.
+
+The transacted install has completed.
+
+Running a transacted installation.
+
+Beginning the Install phase of the installation.
+See the contents of the log file for the C:\Vox Products\Windows Services\CUBE\CubeCredit Service\Cube Credit Service.exe assembly's progress.
+The file is located at C:\Vox Products\Windows Services\CUBE\CubeCredit Service\Cube Credit Service.InstallLog.
+
+The Install phase completed successfully, and the Commit phase is beginning.
+See the contents of the log file for the C:\Vox Products\Windows Services\CUBE\CubeCredit Service\Cube Credit Service.exe assembly's progress.
+The file is located at C:\Vox Products\Windows Services\CUBE\CubeCredit Service\Cube Credit Service.InstallLog.
+
+The Commit phase completed successfully.
+
+The transacted install has completed.

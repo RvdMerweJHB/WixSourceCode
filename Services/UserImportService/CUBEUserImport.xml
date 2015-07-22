@@ -1,0 +1,132 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+CUBEUserImport
+</name>
+</assembly>
+<members>
+<member name="M:CUBEUserImport.general.ToDataTable``1(System.Collections.Generic.IEnumerable{``0})">
+	<summary>
+	</summary>
+	<typeparam name="T"></typeparam>
+	<param name="collection"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:CUBEUserImport.general.GetCompanySettingInfo(System.Int32,System.String)">
+	<summary>
+ Get Data from the setting of the table (Templates, Email Adresses, Headers)
+ </summary>
+	<param name="ID"></param>
+	<param name="sSetting"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:CUBEUserImport.general.GetCompanyInfo(System.Int32,System.String)">
+	<summary>
+ Get Data of a company like Max import records, company phone, address etc
+ </summary>
+	<param name="ID"></param>
+	<param name="sSetting"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:CUBEUserImport.My.Resources.Resources.ResourceManager">
+	<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member><member name="P:CUBEUserImport.My.Resources.Resources.Culture">
+	<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member><member name="T:CUBEUserImport.My.Resources.Resources">
+	<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member><member name="M:CUBEUserImport.ADHelper.ExtractUserName(System.String)">
+	<summary> 
+ Function to extract just the login from the provided string (given in the format YOURDOMAIN\Username) 
+ </summary>
+	<param name="path">Full AD login of the associate</param>
+	<returns>The login with the "YOURDOMAIN\" stripped</returns>
+	<remarks></remarks>
+</member><member name="M:CUBEUserImport.ADHelper.SetADProperty(System.DirectoryServices.DirectoryEntry,System.String,System.String)">
+	<summary> 
+ Helper method that sets properties for AD users. 
+ </summary>
+	<param name="de">DirectoryEntry to use</param>
+	<param name="pName">Property name to set</param>
+	<param name="pValue">Value of property to set</param>
+</member><member name="M:CUBEUserImport.ADHelper.GetDirectoryEntry">
+	<summary> 
+ Method used to create an entry to the AD using a secure connection. 
+ Replace the path. 
+ </summary>
+	<returns>DirectoryEntry</returns>
+</member><member name="M:CUBEUserImport.ADHelper.IsValidADLogin(System.String,System.String,System.String)">
+	<summary> 
+ Function to search the Active Directory and ensure the Login provided in Agent Process is a valid one. The search is performed 
+ to see if the login provided exists for the first and last name of the associate being added 
+ </summary>
+	<param name="loginName">Login of the associate to search for</param>
+	<param name="givenName">First name fo the associate being added</param>
+	<param name="surName">Last name of the associate being added</param>
+	<returns>True or False depending if the login provided is a valid one</returns>
+</member><member name="M:CUBEUserImport.ADHelper.DisableAccount(System.String)">
+	<summary> 
+ Method that disables a user account in the AD  
+ and hides user's email from Exchange address lists. 
+ </summary>
+	<param name="sLogin">Login of the user to disable</param>
+</member><member name="M:CUBEUserImport.ADHelper.ListAllADComputers">
+	<summary> 
+ Function to query the Active Directory and return all the computer names  
+on the network 
+ </summary>
+	<returns>A collection populated with all the computer names</returns>
+</member><member name="M:CUBEUserImport.ADHelper.GetGroups(System.String,System.String,System.String)">
+	<summary> 
+ Function to return all the groups the user is a member od 
+ </summary>
+	<param name="_path">Path to bind to the AD</param>
+	<param name="username">Username of the user</param>
+	<param name="password">password of the user</param>
+</member><member name="M:CUBEUserImport.ADHelper.IsAccountActive(System.Int32)">
+	<summary> 
+ This will perform a logical operation on the userAccountControl values 
+ to see if the user account is enabled or disabled.  The flag for determining if the 
+ account is active is a bitwise value (decimal =2) 
+ </summary>
+	<param name="userAccountControl"></param>
+	<returns></returns>
+</member><member name="M:CUBEUserImport.Err.#ctor(System.String,System.String,System.DateTime,System.Int32,System.Int32,System.String)">
+	<summary>
+ Writes the error to the database [ErrorLevel Reports on the severity of the error 1=Critical, 2=High Attention, 3=Mild Attention, 4=Minor]
+ </summary>
+	<param name="Details"></param>
+	<param name="Message"></param>
+	<param name="ErrorDate"></param>
+	<param name="ErrorLevel"></param>
+	<param name="CompanyID"></param>
+	<param name="Username"></param>
+	<remarks></remarks>
+</member><member name="M:CUBEUserImport.Emailer.buildEmail(System.Guid,System.String,System.String,System.Boolean)">
+	<summary>
+ Funtion will construct the email and then send out the email
+ </summary>
+	<param name="userID"></param>
+	<param name="templatename"></param>
+	<returns>boolean</returns>
+	<remarks></remarks>
+</member><member name="M:CUBEUserImport.Emailer.TagReplace(System.String,System.Boolean,CUBEUserImport.Invitation,CUBEUserImport.Users)">
+	<summary>
+ This will replace all tags in the text for the body of the email
+ </summary>
+	<param name="emailstr"></param>
+	<param name="isemail"></param>
+	<param name="i"></param>
+	<param name="u"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member>
+</members>
+</doc>

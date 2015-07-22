@@ -1,0 +1,898 @@
+/*
+
+RadScheduler Inox skin
+
+* For notes on some CSS class names, please check RadScheduler common skin file *
+
+*/
+
+.RadScheduler_Inox
+{
+    color:#16374c;
+    background:#acacac;
+}
+
+.RadScheduler_Inox,
+.RadScheduler_Inox table
+{
+    font:11px/16px Arial, serif;;
+}
+/* control header */
+
+.RadScheduler_Inox .rsHeader
+{
+    border:1px solid #696969;
+    border-width:1px 1px 0;
+    background:#8EB2DA url('Scheduler/menuItem.gif') repeat-x top left;
+}
+.RadScheduler_Inox .rsHeader p
+{
+	float:left;
+    left:11px;
+    width:90px;
+    height:26px;
+    margin:4px 0 0 0;
+    padding:0;   
+    background:url('Scheduler/PrevNext.gif') 4px 0 no-repeat;
+    line-height:21px;
+    color:#0d5776;
+}
+.RadScheduler_Inox .rsPrevDay,
+.RadScheduler_Inox .rsNextDay
+{
+    top:0;
+    width:14px;
+    height:21px;
+}
+.RadScheduler_Inox .rsPrevDay
+{
+    left:0;
+}
+.RadScheduler_Inox .rsNextDay
+{
+    left:15px;
+}
+.RadScheduler_Inox .rsHeader em
+{
+    font-weight: bold;
+    font-style: normal;
+}
+.RadScheduler_Inox .rsHeader p em
+{
+	position:absolute;
+	top:0;
+	left:38px;
+}
+.RadScheduler_Inox .rsHeader p em a
+{
+    color:#fff;
+}
+
+.RadScheduler_Inox .rsHeader p em a.rsToday
+{
+	text-decoration: underline;
+}
+ 
+.RadSchedule_Inox .rsHeader p em a:hover
+{
+    text-decoration:none;
+}
+
+.RadScheduler_Inox .rsHeader h2
+{
+    margin:0;
+    padding:5px 0 5px 130px;
+    font-size:16px;
+    line-height:20px;
+    color:#fff;
+    font-weight:bold;
+}
+
+.RadScheduler_Inox .rsHeader ul
+{
+    list-style:none;
+    float:right;
+    margin:0;
+    padding: 0;
+    text-align:right;
+    font-size:12px;
+    line-height:30px;
+    height:30px;
+}
+
+.RadScheduler_Inox .rsHeader li
+{
+    float:left;
+    border-left:1px solid #769BCB;
+    color:#fff;
+}
+
+.RadScheduler_Inox .rsHeader .rsSelected,
+.RadScheduler_Inox .rsHeader ul a
+{
+    padding:0 12px;
+}
+
+.RadScheduler_Inox .rsHeader ul a
+{
+    float:left;
+    display:block;
+    color:#fff;
+    text-decoration:none;
+    font-weight: bold;
+}
+
+.RadScheduler_Inox .rsHeader .rsSelected,
+.RadScheduler_Inox .rsHeader ul a:hover
+{
+    background:#bbe054 url('Scheduler/menuItemSelected.gif') center 0 repeat-x;
+	color: #333;
+}
+
+/*table header*/
+
+.RadScheduler_Inox .rsColumnHeader,
+.RadScheduler_Inox .rsAllDay
+{
+    border-left: 1px solid #696969; 
+    border-right: 1px solid #696969;
+}
+
+.RadScheduler_Inox .rsAllDayCell
+{
+    border-right: 1px solid #769bcb;
+    background: #e7f1ff;
+    cursor: default;
+}
+
+/* Begin IE6 Fix - All day-appointments disappear on click */
+* html .RadScheduler_Inox .rsAllDayCell
+{
+	height: 25px;
+}
+
+* html .RadScheduler_Inox .rsAllDayCell .rsWrap
+{
+	height: 100%;
+}
+/* End IE6 Fix  */
+
+.RadScheduler_Inox .rsAllDayCell .rsWrap
+{
+	height: 25px;
+}
+
+.RadScheduler_Inox .rsColumnHeaderFirstCell,
+.RadScheduler_Inox .rsAllDayFirstCell
+{
+    background: #a0b8db; 
+    width: 70px; 
+    height: 25px;
+}
+
+.RadScheduler_Inox .rsColumnHeaderFirstCell div,
+.RadScheduler_Inox .rsAllDayFirstCell div
+{
+    width: 70px;
+}
+
+.RadScheduler_Inox .rsAllDayFirstCell
+{
+	color: #333;
+	font-size: 12px;
+    height: 25px;
+    text-align:center;
+}
+
+.RadScheduler_Inox .rsAllDayLastCell
+{
+    border-top: 0;
+    background: #e7f1ff;
+}
+
+.RadScheduler_Inox .rsAllDayLastCell div,
+.RadScheduler_Inox .rsColumnHeaderLastCell div
+{
+	width: 15px;
+}
+
+.RadScheduler_Inox .rsColumnHeaderTable,
+.RadScheduler_Inox .rsAllDayTable
+{
+    border-left: 1px solid #769bcb; 
+    border-right: 1px solid #769bcb; 
+}
+
+.RadScheduler_Inox .rsColumnHeaderFirstCell,
+.RadScheduler_Inox .rsColumnHeaderRow th
+{
+    border-top: 1px solid #324d78; 
+    background:#5677ad url('Scheduler/rsHeaderBg.gif') repeat-x bottom left;
+    height: 23px;
+}
+
+.RadScheduler_Inox .rsColumnHeaderRow th
+{
+	color: #fff;
+    border-right: 1px solid #2e4873;
+    border-bottom: 1px solid #2e4873;  
+    text-align:center;
+}
+
+.RadScheduler_Inox .rsColumnHeaderRow th.rsTodayCol
+{
+    background:url('Scheduler/WeekDayToday.gif') center 0 repeat-x #ea8e00;
+}
+
+.RadScheduler_Inox .rsColumnHeaderLastCell
+{
+	border-top: 1px solid #426196;
+    background:#5b5b5b url('Scheduler/rsHeaderBg.gif') repeat-x bottom left;
+}
+
+.RadScheduler_Inox .rsContentTable .rsLastCell,
+.RadScheduler_Inox .rsAllDayRow .rsLastCell,
+.RadScheduler_Inox .rsColumnHeaderRow .rsLastCell
+{
+    border-right: 0px none;
+}
+
+.RadScheduler_Inox .rsShowMore
+{
+	cursor: pointer;
+	text-align: center;
+	text-decoration: underline;
+}
+
+/* main content */
+
+.RadScheduler_Inox .rsContent
+{
+    border: 1px solid #696969; 
+}
+
+.RadScheduler_Inox .rsHoursTable
+{
+    width: 70px;
+}
+
+.RadScheduler_Inox .rsHoursTable th
+{
+	color: #333;
+    height: 25px;
+    border-top: 1px solid #6788be; 
+    background: #a0b8db;
+    font-size: 12px;
+}
+
+.RadScheduler_Inox .rsHoursTable th.rsFirstCell
+{
+    border-top: 0;
+    border-top: 1px solid #b5c7e0; 
+}
+
+.RadScheduler_Inox .rsHoursTable th.rsAltHour
+{
+    border-top: 0;
+    padding-top: 1px;
+}
+
+/* task table */
+
+.RadScheduler_Inox .rsContentTable
+{
+    border-left: 1px solid #769bcb;
+}
+
+.RadScheduler_Inox .rsCell
+{
+	border-right: 1px solid #769bcb;
+    background: #fff;
+    height: 25px;
+    border-bottom: 1px solid #d8dde0;
+    vertical-align:top;
+}
+
+.RadScheduler_Inox td.rsWorkHour 
+{
+	background:#fff; 
+}
+
+.RadScheduler_Inox .rsMonthView .rsCell
+{
+	height: auto;
+	background:#fff;
+}
+
+.RadScheduler_Inox .rsMonthView .rsWrap
+{
+	height: 25px;
+	cursor: default;
+}
+
+.RadScheduler_Inox .rsAltRow .rsCell
+{
+	border-bottom-color:#f0f2f3;
+}
+
+.RadScheduler_Inox .rsMonthView td.rsOtherMonth
+{
+    background:#f0f2f4;
+}
+
+.RadScheduler_Inox .rsContentTable .rsSatCol,
+.RadScheduler_Inox .rsContentTable .rsSunCol
+{
+	background:#f0f2f4;
+}
+
+.RadScheduler_Inox .rsMonthView .rsLastRow td.rsSatCol,
+.RadScheduler_Inox .rsMonthView .rsLastRow td.rsSunCol
+{
+    border-bottom-color:#292929;
+}
+
+.RadScheduler_Inox .rsLastRow .rsCell
+{
+	border-bottom: 0px none;
+}
+
+.RadScheduler_Inox .rsContentTable .rsRow .rsAptCreate,
+.RadScheduler_Inox .rsAllDayRow .rsAptCreate
+{
+    background:#dcfc5c;
+    color: #333;
+}
+
+/* small edit form */
+
+.RadScheduler_Inox .rsAptEdit
+{
+    background: #dcfc5c;
+    border: 1px solid #accb2d;
+    margin-left: -1px;
+}
+
+.RadScheduler_Inox .rsEditOptions
+{
+	float: right;
+    margin-right: 2px;
+}
+
+.RadScheduler_Inox .rsAptEditConfirm
+{
+    background:url('Scheduler/AppointmentEditOK.gif') no-repeat center center;
+    height:20px;
+}
+
+.RadScheduler_Inox .rsAptEditCancel
+{
+    background:url('Scheduler/AppointmentEditCancel.gif') no-repeat center center;
+    height:20px;
+}
+
+.RadScheduler_Inox .rsEditOptions a.rsAptEditMore 
+{
+    font-size:0.9em;
+    line-height:20px;
+    text-align:right;
+    text-indent:0pt;
+    color:#949090;
+    text-decoration: none;
+}
+
+.RadScheduler_Inox .rsEditOptions a 
+{
+	float: left;
+	width: 15px;
+}
+
+.RadScheduler_Inox .rsEditOptions a.rsAptEditMore 
+{
+	width: 30px;
+}
+
+.RadScheduler_Inox .rsAptEditTextareaWrapper textarea 
+{
+	font-size: 12px;
+    overflow: auto;
+    
+    background:#fff;
+	border:1px solid;
+	border-color: #abadb3 #dbdfe6 #e3e9ef #e2e3ea;
+	font-family:"Segoe UI",arial,verdana,tahoma,sans-serif;
+	color: #000;
+}
+
+/* apt */
+
+.RadScheduler_Inox .rsContentTable .rsApt
+{
+	width:100%;
+}
+
+.RadScheduler_Inox .rsAptWrap
+{
+    border: 1px solid #6788be;
+    border-bottom-width: 0;
+    background:#bbcde6 url('Scheduler/AppointmentBg.gif') repeat-x top left;
+}
+
+.RadScheduler_Inox .rsAptInner
+{	
+	color: #333;
+	font: bold Arial, serif;
+}
+
+.RadScheduler_Inox .rsAptBottom
+{
+    border-bottom: 1px solid #6788be;
+}
+
+/*
+.RadScheduler_Inox .rsAptSelected .rsAptWrap
+{
+    border-left-color:#86c950;
+    border-right-color:#86c950;
+    background:#d8f5c0;
+}
+
+.RadScheduler_Inox .rsAptSelected .rsAptInner
+{
+    border-top: 1px solid #86c950;
+}
+
+.RadScheduler_Inox .rsAptSelected .rsAptBottom
+{
+    border-bottom: 1px solid #86c950;
+}
+*/
+
+.RadScheduler_Inox .rsAptResize
+{
+    background:url('Scheduler/AppointmentExpand.gif') no-repeat center bottom;
+    width: 15px;
+    height: 6px;
+    bottom: 1px;
+    margin-left: -7px;
+    left: 50%;
+    cursor: s-resize;
+}
+
+.RadScheduler_Inox .rsAptDelete 
+{
+    background:url('Scheduler/AppointmentDelete.gif') no-repeat;
+    height:11px;
+    right:3px;
+    top:3px;
+    width:11px;
+    text-indent:-99em;
+}
+
+.RadScheduler_Inox .rsAptRecurrence
+{
+	padding: 0px 3px;
+	margin: 0px 3px;
+    background:url('Scheduler/rsRecurrence.gif') no-repeat 0 50%;
+}
+
+.RadScheduler_Inox .rsAptRecurrenceException
+{
+	padding: 0px 3px;
+	margin: 0px 3px;
+    background:url('Scheduler/rsRecurrenceException.gif') no-repeat 0 50%;
+}
+
+/* Appointment Arrows */
+
+.RadScheduler_Inox .rsWArrowTop .rsAptContent
+{
+    padding-top:7px;
+}
+.RadScheduler_Inox .rsWArrowBottom .rsAptContent
+{
+    padding-bottom:7px;
+}
+.RadScheduler_Inox .rsWArrowLeft .rsAptContent
+{
+    padding-left:10px;
+}
+.RadScheduler_Inox .rsWArrowRight .rsAptContent
+{
+    padding-right:10px;
+}
+
+.RadScheduler_Inox .rsArrowTop,
+.RadScheduler_Inox .rsArrowBottom
+{
+    width:100%;
+    height:4px;
+    left:0;
+}
+
+.RadScheduler_Inox .rsArrowLeft,
+.RadScheduler_Inox .rsArrowRight
+{
+    width:4px;
+    height:100%;
+    top:0;
+}
+
+.RadScheduler_Inox .rsArrowTop
+{
+    top:2px;
+    background:url('Scheduler/AppointmentArrowU.gif') 50% 0 no-repeat;
+}
+.RadScheduler_Inox .rsArrowBottom
+{
+    background:url('Scheduler/AppointmentArrowD.gif') 50% 0 no-repeat;
+    bottom:2px;
+}
+.RadScheduler_Inox .rsArrowLeft
+{
+    background:url('Scheduler/AppointmentArrowL.gif') 0 50% no-repeat;
+    left:3px;
+}
+.RadScheduler_Inox .rsArrowRight
+{
+    background:url('Scheduler/AppointmentArrowR.gif') 0 50% no-repeat;
+    right:3px;
+}
+
+/* footer */
+
+.RadScheduler_Inox .rsFooter
+{
+    border:1px solid #696969;
+    border-top:0;
+    background:#989898;
+    line-height:20px;
+}
+
+.RadScheduler_Inox .rsFooter a
+{
+    margin-left:10px;
+    padding-left:11px;
+    background:url('Scheduler/Show24.gif') 0 0.3em no-repeat;
+    color:#4464a4;
+}
+
+/* Advanced Edit */
+
+.RadScheduler_Inox .rsAdvancedEdit
+{
+    background:#f7f7f7;
+	border:1px solid #a0a0a0;
+	cursor: default;
+}
+
+.RadScheduler_Inox .rsAdvancedEdit .rsAdvInput,
+.RadScheduler_Inox .rsAdvancedEdit select,
+.RadScheduler_Inox .rsAdvancedEdit textarea
+{
+	border-color:#6788be;
+	border-style:solid;
+	border-width:1px 1px 2px;
+	color:#000;
+}
+
+.RadScheduler_Inox .rsAdvancedEdit .rsAdvInput:hover,
+.RadScheduler_Inox .rsAdvancedEdit select:hover,
+.RadScheduler_Inox .rsAdvancedEdit textarea:hover
+{
+	border-color: #a5bedf;
+}
+
+.RadScheduler_Inox .rsAdvancedEdit .rsAdvInput:focus,
+.RadScheduler_Inox .rsAdvancedEdit select:focus,
+.RadScheduler_Inox .rsAdvancedEdit textarea:focus
+{
+	border-color:#6788be;
+}
+
+.RadScheduler_Inox .rsAdvancedEdit .pickerWrapper_Inox
+{
+	border: 0;
+}
+
+.RadScheduler_Inox .rsAdvancedEdit textarea
+{
+    display:block;
+	width:80%;
+	font: 12px Arial,sans-serif;
+}
+
+.RadScheduler_Inox .rsAdvMoreDetails,
+.RadScheduler_Inox .rsAdvRecurrence
+{
+	border-top: 1px solid #dfdfdf;
+	border-bottom:1px solid #cdcdcd;
+	background:url(Scheduler/AdvEditHead.gif) repeat-x #dfdfdf;
+	padding:0 0 0 16px;
+	font-size:14px;
+	line-height:29px;
+	height:29px;
+}
+
+.RadScheduler_Inox .rsAdvMoreDetails
+{
+	margin:1em 0 0.6em;
+}
+.RadScheduler_Inox .rsAdvRecurrence
+{
+	margin:1em 0 0;
+}
+
+
+.RadScheduler_Inox .rsAdvancedSubmitArea
+{
+	padding-top:2px;
+	line-height:3em;
+	border-top:1px solid #dadada;
+	background:#fff;
+}
+
+.RadScheduler_Inox .rsAdvEditSave,
+.RadScheduler_Inox .rsAdvEditCancel
+{
+	margin-left:16px;
+	text-decoration:none;
+	font-weight:bold
+}
+
+.RadScheduler_Inox .rsAdvEditSave
+{
+	padding-left:15px;
+	background:url(Scheduler/AppointmentEditOK.gif) 0 0.4em no-repeat;
+	color:#588f02;
+	font-size:1.6em
+}
+
+.RadScheduler_Inox .rsAdvEditCancel
+{
+	padding-left:13px;
+	background:url(Scheduler/AppointmentEditCancel.gif) 0 0.36em no-repeat;
+	color:#e46100;
+	font-size:1.2em;
+}
+
+.RadScheduler_Inox .rsAdvBasicControls:after,
+.RadScheduler_Inox .rsAdvMoreControls ul:after,
+.RadScheduler_Inox .rsAdvRecurrenceFreq:after,
+.RadScheduler_Inox .rsAdvRecurrencePatterns:after
+{
+	content:".";
+	display:block;
+	clear:both;
+	height:0;
+	visibility:hidden;
+}
+
+.RadScheduler_Inox .rsAdvBasicControls label,
+.RadScheduler_Inox .rsAdvBasicControls textarea
+{   
+    display:block;
+    margin:0.8em 0 0 15px;
+}
+
+.RadScheduler_Inox .rsAdvBasicControls ul
+{
+    list-style:none;
+    margin:0.8em 0 0 15px;
+    padding:0;
+}
+
+.RadScheduler_Inox .rsAdvBasicControls li
+{
+    float:left;
+    margin-right:10px;
+}
+
+.RadScheduler_Inox .rsAdvBasicControls li label
+{
+    display:inline;
+    margin-left:0;
+    vertical-align:middle;
+    padding-right:5px;
+}
+
+.RadScheduler_Inox .rsAdvBasicControls li .rsAdvInput
+{
+	margin-right:5px;
+}
+
+.RadScheduler_Inox .rsAdvMoreControls ul,
+.RadScheduler_Inox .rsAdvRecurrenceRangePanel ul
+{
+    list-style:none;
+    margin:0.8em 0 0 15px;
+    padding:0;
+}
+
+.RadScheduler_Inox .rsAdvRecurrenceRangePanel label
+{
+	padding-right: 4px;
+}
+
+.RadScheduler_Inox .rsAdvMoreControls li
+{
+    float:left;
+    clear:left;
+    width:100%;
+}
+
+.RadScheduler_Inox .rsAdvMoreControls li label
+{
+    float:left;
+    width:60px;
+}
+
+.RadScheduler_Inox .rsAdvancedEdit .rsAdvCheckboxWrapper input
+{
+	vertical-align: middle;
+}
+
+.RadScheduler_Inox .rsAdvancedEdit .rsAdvCheckboxWrapper label
+{
+	width: auto;
+}
+
+.RadScheduler_Inox .rsAdvMoreControls li input
+{
+    float:left;
+}
+
+.RadScheduler_Inox .rsAdvRecurrenceRange
+{
+    margin:1em 0 0;
+    padding:0.8em 0 0 15px;
+}
+
+.RadScheduler_Inox .rsAdvRecurrenceFreq
+{
+    float:left;
+    width:150px;
+    margin:0.8em 0 0 0;
+    border-right:1px solid #769bcb;
+}
+
+.RadScheduler_Inox .rsAdvRecurrenceFreq ul
+{
+    list-style:none;
+    margin:0 0 0 15px;
+    padding:0;
+}
+
+
+.RadScheduler_Inox .rsAdvResetExceptions
+{
+	clear: both;
+	text-align: right;
+}
+
+.RadScheduler_Inox .rsAdvHourly,
+.RadScheduler_Inox .rsAdvDaily,
+.RadScheduler_Inox .rsAdvWeekly,
+.RadScheduler_Inox .rsAdvMonthly,
+.RadScheduler_Inox .rsAdvYearly
+{
+    float:left;
+    margin:1em 0 0 0;
+    padding-left:2em;
+    position:relative;
+    left:-2px;
+}
+
+.RadScheduler_Inox .rsAdvHourly ul,
+.RadScheduler_Inox .rsAdvDaily ul,
+.RadScheduler_Inox .rsAdvWeekly ul,
+.RadScheduler_Inox .rsAdvMonthly ul,
+.RadScheduler_Inox .rsAdvYearly ul
+{
+    list-style:none;
+    margin:0 0 0 15px;
+    padding:0;
+    width: 390px;
+}
+
+.RadScheduler_Inox .rsAdvHourly li,
+.RadScheduler_Inox .rsAdvDaily li,
+.RadScheduler_Inox .rsAdvWeekly li,
+.RadScheduler_Inox .rsAdvMonthly li,
+.RadScheduler_Inox .rsAdvYearly li,
+.RadScheduler_Inox .rsAdvRecurrenceRangePanel li,
+.RadScheduler_Inox .rsAdvMoreControls li
+{
+    margin:0 0 0.3em 0;
+}
+
+.RadScheduler_Inox .rsAdvHourly input,
+.RadScheduler_Inox .rsAdvDaily input,
+.RadScheduler_Inox .rsAdvWeekly input,
+.RadScheduler_Inox .rsAdvMonthly input,
+.RadScheduler_Inox .rsAdvYearly input,
+.RadScheduler_Inox .rsAdvHourly select,
+.RadScheduler_Inox .rsAdvDaily select,
+.RadScheduler_Inox .rsAdvWeekly select,
+.RadScheduler_Inox .rsAdvMonthly select,
+.RadScheduler_Inox .rsAdvYearly select
+{
+    margin:0 2px;
+}
+
+.RadScheduler_Inox .rsAdvRecurrencePatterns .rsAdvInput,
+.RadScheduler_Inox .rsAdvRecurrenceRangePanel .rsAdvInput
+{
+	width: 30px;
+	padding-left: 1px;
+	padding-right: 1px;
+}
+
+.RadScheduler_Inox .rsAdvRecurrencePatterns .rsAdvWeekly_Weekday
+{
+	float: left;
+	width: 100px;
+}
+
+.RadScheduler_Inox .rsConfirmation
+{
+    position:absolute;
+    z-index:10001;
+    width:284px;
+    height:185px;
+    border:1px solid #8bbde8;
+    padding-left:96px;
+    background:#f4fcff url(Scheduler/rsConfirmation.gif) repeat-y;
+}
+
+.RadScheduler_Inox .rsConfirmation h1,
+.RadScheduler_Inox .rsConfirmation h2
+{
+    margin:22px 0;
+    font:normal 14px/1.2 arial,sans-serif;
+    color:#333;
+}
+
+.RadScheduler_Inox .rsConfirmation div
+{
+    font:normal 14px/1.2 arial, sans-serif;
+    color:#085ba1;
+}
+
+.RadScheduler_Inox .rsConfirmation input
+{
+    position:relative;
+    top:1px;
+}
+
+.RadScheduler_Inox .rsConfirmation .rsButtonContainer
+{
+    margin:20px 0 0;
+}
+
+.RadScheduler_Inox .rsConfirmation .rsButtonContainer a
+{
+    background:#085ba1;
+    margin: 5px;
+    padding:1px 3px 3px;
+    color:#fff;
+    text-decoration:none;
+}
+
+.RadScheduler_Inox .rsAdvancedEdit .radInput_Inox,
+.RadScheduler_Inox .rsAdvancedEdit .pickerWrapper_Inox
+{
+	vertical-align: top;
+	border: 0;
+}
+
+.RadScheduler_Inox .rsScrollingContent
+{
+	scrollbar-face-color: #e9e9e9;
+	scrollbar-highlight-color: #ffffff;
+	scrollbar-shadow-color: #e9e9e9;
+	scrollbar-3dlight-color: #dbdbdb;
+	scrollbar-arrow-color: #787878;
+	scrollbar-track-color: #f5f5f5;
+	scrollbar-darkshadow-color: #aeaeae;
+}

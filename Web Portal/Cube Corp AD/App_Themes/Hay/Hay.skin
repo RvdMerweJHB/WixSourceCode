@@ -1,0 +1,36 @@
+﻿<%@ Register TagPrefix="telerik" Namespace="Telerik.Web.UI" Assembly="Telerik.Web.UI" %>
+<telerik:RadMenu runat="server" Skin="Hay" />
+<telerik:RadCalendar runat="server" Skin="Hay" />
+<telerik:RadDateInput runat="server" Skin="Hay" />
+<telerik:RadDatePicker runat="server" Skin="Hay" />
+<telerik:RadDateTimePicker runat="server" Skin="Hay" />
+<telerik:RadTimePicker runat="server" Skin="Hay" />
+<telerik:RadChart runat="server" Skin="Hay" />
+<telerik:RadComboBox runat="server" Skin="Hay" />
+
+<telerik:RadContextMenu runat="server" Skin="Hay" />
+<telerik:RadTreeView runat="server" Skin="Hay" />
+<telerik:RadEditor runat="server" Skin="Hay" />
+<telerik:RadWindowManager runat="server" Skin="Hay" />
+<telerik:RadWindow runat="server" Skin="Hay" />
+<telerik:RadFormDecorator runat="server" Skin="Hay" />
+<telerik:RadToolBar runat="server" Skin="Hay" />
+<telerik:RadTextBox runat="server" Skin="Hay" />
+<telerik:RadNumericTextBox runat="server" Skin="Hay" />
+<telerik:RadMaskedTextBox runat="server" Skin="Hay" />
+
+<%--
+Default skin template. The following skins are provided as examples only.
+
+1. Named control skin. The SkinId should be uniquely defined because
+   duplicate SkinId's per control type are not allowed in the same theme.
+
+<asp:GridView runat="server" SkinId="gridviewSkin" BackColor="White" >
+   <AlternatingRowStyle BackColor="Blue" />
+</asp:GridView>
+
+2. Default skin. The SkinId is not defined. Only one default 
+   control skin per control type is allowed in the same theme.
+
+<asp:Image runat="server" ImageUrl="~/images/image1.jpg" />
+--%>

@@ -1,0 +1,132 @@
+/* r.a.d.colorpicker INOX skin */
+
+/* skin-specific wrapper */
+.RadColorPicker_Inox .palette
+{
+	border: solid 1px #b7bccc;
+	background: #e3e7f1;
+}
+
+/* color buttons */
+.RadColorPicker_Inox .palette ul li a
+{
+	cursor: hand;
+	border: solid 1px #e3e7f1;
+	margin: 1px;
+}
+
+.RadColorPicker_Inox .palette ul li a span
+{
+	border: solid 1px #9298ac;
+}
+/* end of color buttons */
+
+/* selected color */
+.RadColorPicker_Inox .selectedcolor
+{
+	border: solid 1px #9399a2 !important;
+}
+
+.RadColorPicker_Inox .selectedcolor span
+{
+	border: solid 1px white !important;
+}
+/* end of selected color */
+
+/* color preview panel */
+.RadColorPicker_Inox .palette .colorpreview
+{
+	border: solid 1px #9298ac;
+	margin: 2px;
+}
+
+.RadColorPicker_Inox .palette .colorpreview span
+{
+	font: normal 11px Arial, Verdana, Sans-serif;
+	cursor: default;
+	line-height: 24px;
+}
+
+.RadColorPicker_Inox .palette .colorpreview .colorvaluedark
+{
+	color: white;
+	margin-right: 2px;
+}
+
+.RadColorPicker_Inox .palette .colorpreview .colorvaluelight
+{
+	color: black;
+	margin-left: 2px;
+}
+
+.RadColorPicker_Inox .palette .colorbox
+{
+}
+/* end of color preview panel */
+
+/* no color button */
+.RadColorPicker_Inox .palette .emptycolor
+{
+	background: white;
+}
+
+.RadColorPicker_Inox .palette .emptycolor,
+.RadColorPicker_Inox .palette .emptycolor.selectedColor 
+{
+	border: solid 1px #9298ac !important;
+	font-size: 12px;
+	text-align: center;
+	line-height: 30px;
+	margin: 2px 2px 0 2px;
+}
+
+.RadColorPicker_Inox .palette .emptycolor span,
+.RadColorPicker_Inox .palette .emptycolor.selectedColor span
+{
+	border: solid 1px white;
+}
+
+.RadColorPicker_Inox .palette .emptycolor span,.RadColorPicker_Inox .palette .emptycolor a
+{
+	font: bold 10px Verdana, Arial, Sans-serif;
+	color: #9298ac;
+	text-decoration: none;
+	display: block; clear: both; float: none;
+	margin: 0;
+}
+/* end of no color button */
+
+/* color picker icon */
+.RadColorPicker_Inox .icon,
+.RadColorPicker_Inox .icon a,
+.RadColorPicker_Inox .icon em
+{
+	width: 34px; height: 22px;
+}
+
+.RadColorPicker_Inox .icon a,
+.RadColorPicker_Inox .icon a:hover,
+.RadColorPicker_Inox .icon a:active,
+.RadColorPicker_Inox .icon a:focus
+{
+	background-image: url(ColorPicker/IconSprites.gif);
+	background-repeat: no-repeat;
+	cursor: default;
+}
+
+.RadColorPicker_Inox .icon a
+{
+	background-position: 0 0;
+}
+
+.RadColorPicker_Inox .icon a:hover
+{
+	background-position: 0 -22px;
+}
+
+.RadColorPicker_Inox .icon a:active,
+.RadColorPicker_Inox .icon a:focus
+{
+	background-position: 0 -44px;
+}
+/* end color picker icon */

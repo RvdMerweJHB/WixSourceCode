@@ -1,0 +1,65 @@
+/* RadUpload Common Styles */
+
+.radupload
+{
+	width:430px; /*default*/
+}
+
+.raduploadsingle
+{
+	display:inline;
+}
+
+.ruInputs
+{
+	zoom:1;/*IE fix - removing items on the client*/
+}
+
+.ruInputs,
+.ruProgress
+{
+	list-style:none;
+	margin:0;
+	padding:0;
+}
+
+.ruFileWrap
+{
+	position:relative;
+	white-space:nowrap;
+}
+
+.ruFileInput,
+.ruFakeInput,
+.ruButton
+{
+	vertical-align:top;
+}
+
+.ruCheck
+{
+	position:relative;
+	zoom:1;
+}
+
+.ruStyled .ruFileInput
+{
+	position:absolute;
+	z-index:1;
+	opacity:0;/*Opera,Firefox*/
+	-moz-opacity:0;/*Firefox*/
+	filter:alpha(opacity=0);/*IE*/
+}
+
+.ruReadOnly .ruFakeInput
+{
+	position:relative;
+	z-index:2;
+}
+
+.ruButtonDisabled
+{
+	opacity:0.6;/*Opera,Firefox*/
+	-moz-opacity:0.6;/*Firefox*/
+	filter:alpha(opacity=60);/*IE*/
+}
